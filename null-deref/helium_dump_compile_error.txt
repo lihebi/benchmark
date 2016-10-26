@@ -1,0 +1,16 @@
+error: /tmp/helium-test-tmp.RTfkfE
+main.c:26:38: error: invalid application of ‘sizeof’ to incomplete type ‘struct nstxmsg’
+main.c:101:25: error: dereferencing pointer to incomplete type ‘struct nstxmsg’
+
+error: /tmp/helium-test-tmp.pU6wDW
+main.c:26:38: error: invalid application of ‘sizeof’ to incomplete type ‘struct nstxmsg’
+main.c:190:30: error: dereferencing pointer to incomplete type ‘struct nstxmsg’
+
+error: /tmp/helium-test-tmp.RtMh03
+main.c:26:38: error: invalid application of ‘sizeof’ to incomplete type ‘struct nstxmsg’
+main.c:101:25: error: dereferencing pointer to incomplete type ‘struct nstxmsg’
+
+error: /tmp/helium-test-tmp.HQuvmd
+main.c:26:38: error: invalid application of ‘sizeof’ to incomplete type ‘struct nstxmsg’
+main.c:190:30: error: dereferencing pointer to incomplete type ‘struct nstxmsg’
+

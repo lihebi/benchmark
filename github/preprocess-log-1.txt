@@ -1,0 +1,3346 @@
+hebi at debian in ~/github/9999$ for name in *.zip; do timeout 30m helium-preprocess.sh $name; [ $? == 0 ] && echo "$name " >> result.txt; done
+Processing 2ndQuadrant--repmgr.zip ..
+Outputing to helium-output/2ndQuadrant--repmgr ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m14.454s
+user    0m6.900s
+sys     0m1.212s
+Processing a0rtega--pafish.zip ..
+Outputing to helium-output/a0rtega--pafish ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.252s
+user    0m1.444s
+sys     0m0.264s
+Processing a2o--snoopy.zip ..
+Outputing to helium-output/a2o--snoopy ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m8.582s
+user    0m3.560s
+sys     0m0.612s
+Processing aardappel--treesheets.zip ..
+Outputing to helium-output/aardappel--treesheets ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m12.133s
+user    0m5.908s
+sys     0m0.684s
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 114: et/: No such file or directory
+Creating snippet db ...
+EE: target folder cpped does not exist.
+
+real    0m0.009s
+user    0m0.000s
+sys     0m0.008s
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 120: syntax error near unexpected token `done'
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 120: `done'
+Processing abperiasamy--rtl8812AU_8821AU_linux.zip ..
+Outputing to helium-output/abperiasamy--rtl8812AU_8821AU_linux ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing abrasive--shairport.zip ..
+Outputing to helium-output/abrasive--shairport ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m14.972s
+user    0m5.172s
+sys     0m1.044s
+Processing acassen--keepalived.zip ..
+Outputing to helium-output/acassen--keepalived ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m36.276s
+user    0m29.616s
+sys     0m12.612s
+Processing adafruit--Adafruit-GFX-Library.zip ..
+Outputing to helium-output/adafruit--Adafruit-GFX-Library ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m6.315s
+user    0m17.344s
+sys     0m3.760s
+Processing adoxa--ansicon.zip ..
+Outputing to helium-output/adoxa--ansicon ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m4.089s
+user    0m2.052s
+sys     0m0.236s
+Processing adrianlopezroche--fdupes.zip ..
+Outputing to helium-output/adrianlopezroche--fdupes ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.801s
+user    0m1.400s
+sys     0m0.216s
+Processing aggregateknowledge--postgresql-hll.zip ..
+Outputing to helium-output/aggregateknowledge--postgresql-hll ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m4.398s
+user    0m1.808s
+sys     0m0.292s
+Processing akheron--jansson.zip ..
+Outputing to helium-output/akheron--jansson ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m23.750s
+user    0m8.852s
+sys     0m1.828s
+Processing akopytov--sysbench.zip ..
+Outputing to helium-output/akopytov--sysbench ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.025s
+user    0m0.004s
+sys     0m0.000s
+Processing albfan--miraclecast.zip ..
+Outputing to helium-output/albfan--miraclecast ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    5m30.993s
+user    0m32.700s
+sys     0m21.288s
+Processing AlexDenisov--iActiveRecord.zip ..
+Outputing to helium-output/AlexDenisov--iActiveRecord ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71:   839 Aborted              helium --create-snippet-db cpped > /dev/null
+
+real    0m0.035s
+user    0m0.012s
+sys     0m0.000s
+Processing alibaba--nginx-http-concat.zip ..
+Outputing to helium-output/alibaba--nginx-http-concat ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.440s
+user    0m0.244s
+sys     0m0.028s
+Processing alibaba--tsar.zip ..
+Outputing to helium-output/alibaba--tsar ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m16.871s
+user    0m5.280s
+sys     0m1.092s
+Processing allinurl--goaccess.zip ..
+Outputing to helium-output/allinurl--goaccess ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    3m1.491s
+user    0m30.900s
+sys     0m13.604s
+Processing alols--xcape.zip ..
+Outputing to helium-output/alols--xcape ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.843s
+user    0m0.360s
+sys     0m0.052s
+Processing alonho--pytrace.zip ..
+Outputing to helium-output/alonho--pytrace ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m6.840s
+user    0m1.996s
+sys     0m0.428s
+Processing AltraMayor--f3.zip ..
+Outputing to helium-output/AltraMayor--f3 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m11.571s
+user    0m3.844s
+sys     0m0.764s
+Processing ambrop72--badvpn.zip ..
+Outputing to helium-output/ambrop72--badvpn ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    12m9.869s
+user    2m32.712s
+sys     1m21.648s
+Processing andlabs--libui.zip ..
+Outputing to helium-output/andlabs--libui ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m43.698s
+user    0m13.932s
+sys     0m3.676s
+Processing andrewrk--libsoundio.zip ..
+Outputing to helium-output/andrewrk--libsoundio ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    15m28.555s
+user    0m39.768s
+sys     0m59.372s
+Processing ands--lightmapper.zip ..
+Outputing to helium-output/ands--lightmapper ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.160s
+user    0m0.680s
+sys     0m0.100s
+Processing antirez--disque.zip ..
+Outputing to helium-output/antirez--disque ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m14.012s
+user    0m52.440s
+sys     0m18.632s
+Processing antirez--dump1090.zip ..
+Outputing to helium-output/antirez--dump1090 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.557s
+user    0m1.948s
+sys     0m0.224s
+Processing antirez--kilo.zip ..
+Outputing to helium-output/antirez--kilo ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m30.302s
+user    0m2.016s
+sys     0m1.916s
+Processing antirez--linenoise.zip ..
+Outputing to helium-output/antirez--linenoise ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m21.075s
+user    0m1.772s
+sys     0m1.368s
+Processing antirez--load81.zip ..
+Outputing to helium-output/antirez--load81 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    5m35.099s
+user    0m32.036s
+sys     0m21.740s
+Processing antirez--sds.zip ..
+Outputing to helium-output/antirez--sds ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.110s
+user    0m0.924s
+sys     0m0.144s
+Processing antirez--shapeme.zip ..
+Outputing to helium-output/antirez--shapeme ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.374s
+user    0m0.768s
+sys     0m0.104s
+Processing antirez--smaz.zip ..
+Outputing to helium-output/antirez--smaz ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.276s
+user    0m0.168s
+sys     0m0.020s
+Processing AOP-PHP--AOP.zip ..
+Outputing to helium-output/AOP-PHP--AOP ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.817s
+user    0m1.440s
+sys     0m0.236s
+Processing apple--swift-corelibs-libdispatch.zip ..
+Outputing to helium-output/apple--swift-corelibs-libdispatch ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    3m2.556s
+user    0m53.256s
+sys     0m20.104s
+Processing appunite--AndroidFFmpeg.zip ..
+Outputing to helium-output/appunite--AndroidFFmpeg ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    7m12.466s
+user    0m14.944s
+sys     0m25.620s
+Processing ardagnir--athame.zip ..
+Outputing to helium-output/ardagnir--athame ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.885s
+user    0m1.448s
+sys     0m0.256s
+Processing arjun024--mkernel.zip ..
+Outputing to helium-output/arjun024--mkernel ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.064s
+user    0m0.028s
+sys     0m0.008s
+Processing armon--bloomd.zip ..
+Outputing to helium-output/armon--bloomd ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 21042 Aborted              helium --create-snippet-db cpped > /dev/null
+
+real    0m12.783s
+user    0m4.556s
+sys     0m1.084s
+Processing armon--hlld.zip ..
+Outputing to helium-output/armon--hlld ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 27366 Aborted              helium --create-snippet-db cpped > /dev/null
+
+real    0m11.310s
+user    0m3.812s
+sys     0m0.736s
+Processing arut--nginx-rtmp-module.zip ..
+Outputing to helium-output/arut--nginx-rtmp-module ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m58.791s
+user    0m22.304s
+sys     0m5.000s
+Processing ashima--webgl-noise.zip ..
+Outputing to helium-output/ashima--webgl-noise ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m19.485s
+user    0m43.140s
+sys     0m6.836s
+Processing atomicobject--heatshrink.zip ..
+Outputing to helium-output/atomicobject--heatshrink ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m20.845s
+user    0m5.300s
+sys     0m1.288s
+Processing attractivechaos--klib.zip ..
+Outputing to helium-output/attractivechaos--klib ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m22.763s
+user    0m10.432s
+sys     0m2.164s
+Processing AuroraWright--Luma3DS.zip ..
+Outputing to helium-output/AuroraWright--Luma3DS ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m0.879s
+user    0m9.732s
+sys     0m4.020s
+Processing awslabs--s2n.zip ..
+Outputing to helium-output/awslabs--s2n ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    21m14.698s
+user    0m58.808s
+sys     1m19.520s
+Processing axiak--pybloomfiltermmap.zip ..
+Outputing to helium-output/axiak--pybloomfiltermmap ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.279s
+user    0m1.736s
+sys     0m0.200s
+Processing balde--balde.zip ..
+Outputing to helium-output/balde--balde ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m20.072s
+user    0m12.644s
+sys     0m8.604s
+Processing banister--binding_of_caller.zip ..
+Outputing to helium-output/banister--binding_of_caller ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing bartobri--no-more-secrets.zip ..
+Outputing to helium-output/bartobri--no-more-secrets ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.605s
+user    0m0.392s
+sys     0m0.036s
+Processing baskerville--bspwm.zip ..
+Outputing to helium-output/baskerville--bspwm ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m9.048s
+user    0m15.676s
+sys     0m8.428s
+Processing baskerville--sxhkd.zip ..
+Outputing to helium-output/baskerville--sxhkd ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m5.072s
+user    0m1.900s
+sys     0m0.316s
+Processing begeekmyfriend--yasea.zip ..
+Outputing to helium-output/begeekmyfriend--yasea ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    17m36.275s
+user    2m5.964s
+sys     1m23.136s
+Processing benblazak--ergodox-firmware.zip ..
+Outputing to helium-output/benblazak--ergodox-firmware ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m6.297s
+user    0m2.756s
+sys     0m0.308s
+Processing billziss-gh--winfsp.zip ..
+Outputing to helium-output/billziss-gh--winfsp ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m2.688s
+user    0m32.308s
+sys     0m10.028s
+Processing bither--bither-android-lib.zip ..
+Outputing to helium-output/bither--bither-android-lib ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing bitly--dablooms.zip ..
+Outputing to helium-output/bitly--dablooms ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.855s
+user    0m1.292s
+sys     0m0.248s
+Processing bitly--simplehttp.zip ..
+Outputing to helium-output/bitly--simplehttp ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m38.671s
+user    0m14.112s
+sys     0m4.000s
+Processing Blosc--c-blosc.zip ..
+Outputing to helium-output/Blosc--c-blosc ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71:  2166 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m54.052s
+user    0m21.548s
+sys     0m9.408s
+Processing BohuTANG--nessDB.zip ..
+Outputing to helium-output/BohuTANG--nessDB ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m31.908s
+user    0m10.096s
+sys     0m2.252s
+Processing bonzini--qboot.zip ..
+Outputing to helium-output/bonzini--qboot ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.912s
+user    0m1.576s
+sys     0m0.284s
+Processing brianmario--escape_utils.zip ..
+Outputing to helium-output/brianmario--escape_utils ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.593s
+user    0m1.128s
+sys     0m0.148s
+Processing brianmario--yajl-ruby.zip ..
+Outputing to helium-output/brianmario--yajl-ruby ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m34.520s
+user    0m4.612s
+sys     0m2.112s
+Processing bsdphk--Ntimed.zip ..
+Outputing to helium-output/bsdphk--Ntimed ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m7.324s
+user    0m3.164s
+sys     0m0.424s
+Processing Bumblebee-Project--Bumblebee.zip ..
+Outputing to helium-output/Bumblebee-Project--Bumblebee ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m13.498s
+user    0m2.912s
+sys     0m0.800s
+Processing bumptech--stud.zip ..
+Outputing to helium-output/bumptech--stud ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m5.673s
+user    0m2.444s
+sys     0m0.396s
+Processing c9s--Pux.zip ..
+Outputing to helium-output/c9s--Pux ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m38.194s
+user    0m7.392s
+sys     0m2.536s
+Processing c9s--r3.zip ..
+Outputing to helium-output/c9s--r3 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m48.662s
+user    0m12.152s
+sys     0m3.652s
+Processing calleerlandsson--pick.zip ..
+Outputing to helium-output/calleerlandsson--pick ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m12.136s
+user    0m1.092s
+sys     0m0.784s
+Processing carp-lang--Carp.zip ..
+Outputing to helium-output/carp-lang--Carp ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m19.321s
+user    0m7.324s
+sys     0m1.272s
+Processing cbsheng--tinyhttpd.zip ..
+Outputing to helium-output/cbsheng--tinyhttpd ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.615s
+user    0m0.308s
+sys     0m0.040s
+Processing cbuchner1--CudaMiner.zip ..
+Outputing to helium-output/cbuchner1--CudaMiner ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m31.834s
+user    0m15.096s
+sys     0m2.736s
+Processing celluloid--nio4r.zip ..
+Outputing to helium-output/celluloid--nio4r ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m37.701s
+user    0m6.324s
+sys     0m2.352s
+Processing Celtoys--Remotery.zip ..
+Outputing to helium-output/Celtoys--Remotery ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    3m55.882s
+user    0m11.308s
+sys     0m14.704s
+Processing centaurean--density.zip ..
+Outputing to helium-output/centaurean--density ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m22.667s
+user    0m5.976s
+sys     0m1.648s
+Processing charliesome--jsos.zip ..
+Outputing to helium-output/charliesome--jsos ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m29.302s
+user    0m8.784s
+sys     0m2.112s
+Processing chentao0707--QrCodeScan.zip ..
+Outputing to helium-output/chentao0707--QrCodeScan ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m39.441s
+user    0m26.608s
+sys     0m11.120s
+Processing chjj--compton.zip ..
+Outputing to helium-output/chjj--compton ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m21.662s
+user    0m12.996s
+sys     0m5.332s
+Processing Chlumsky--msdfgen.zip ..
+Outputing to helium-output/Chlumsky--msdfgen ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71:  3546 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m21.728s
+user    0m8.228s
+sys     0m1.288s
+Processing chneukirchen--nq.zip ..
+Outputing to helium-output/chneukirchen--nq ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.352s
+user    0m0.200s
+sys     0m0.020s
+Processing chokepoint--azazel.zip ..
+Outputing to helium-output/chokepoint--azazel ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.226s
+user    0m0.984s
+sys     0m0.140s
+Processing ChrisJohnsen--tmux-MacOSX-pasteboard.zip ..
+Outputing to helium-output/ChrisJohnsen--tmux-MacOSX-pasteboard ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.633s
+user    0m0.568s
+sys     0m0.100s
+Processing christinaa--rpi-open-firmware.zip ..
+Outputing to helium-output/christinaa--rpi-open-firmware ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    4m19.409s
+user    0m32.744s
+sys     0m17.036s
+Processing ChristopheJacquet--PiFmRds.zip ..
+Outputing to helium-output/ChristopheJacquet--PiFmRds ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.058s
+user    0m1.024s
+sys     0m0.120s
+Processing cisco--thor.zip ..
+Outputing to helium-output/cisco--thor ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m46.066s
+user    0m49.108s
+sys     0m16.176s
+Processing citusdata--citus.zip ..
+Outputing to helium-output/citusdata--citus ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m13.534s
+user    0m35.680s
+sys     0m11.896s
+Processing citusdata--cstore_fdw.zip ..
+Outputing to helium-output/citusdata--cstore_fdw ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m6.998s
+user    0m2.960s
+sys     0m0.408s
+Processing citusdata--pg_shard.zip ..
+Outputing to helium-output/citusdata--pg_shard ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m8.584s
+user    0m3.564s
+sys     0m0.580s
+Processing clibs--clib.zip ..
+Outputing to helium-output/clibs--clib ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing clMathLibraries--clBLAS.zip ..
+Outputing to helium-output/clMathLibraries--clBLAS ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71:  4983 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    1m57.138s
+user    0m23.980s
+sys     0m11.468s
+Processing cloudozer--ling.zip ..
+Outputing to helium-output/cloudozer--ling ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71:  1773 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    3m5.168s
+user    0m47.224s
+sys     0m23.768s
+Processing cloudwu--coroutine.zip ..
+Outputing to helium-output/cloudwu--coroutine ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.623s
+user    0m0.260s
+sys     0m0.040s
+Processing cloudwu--mptun.zip ..
+Outputing to helium-output/cloudwu--mptun ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.158s
+user    0m0.584s
+sys     0m0.096s
+Processing cloudwu--pbc.zip ..
+Outputing to helium-output/cloudwu--pbc ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m16.248s
+user    0m6.508s
+sys     0m1.372s
+Processing cloudwu--skynet.zip ..
+Outputing to helium-output/cloudwu--skynet ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    11m56.794s
+user    1m25.000s
+sys     0m52.804s
+Processing cloudwu--sproto.zip ..
+Outputing to helium-output/cloudwu--sproto ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.938s
+user    0m1.440s
+sys     0m0.220s
+Processing clowwindy--ShadowVPN.zip ..
+Outputing to helium-output/clowwindy--ShadowVPN ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.023s
+user    0m0.000s
+sys     0m0.004s
+Processing cmus--cmus.zip ..
+Outputing to helium-output/cmus--cmus ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    12m41.523s
+user    1m31.768s
+sys     0m53.092s
+Processing cnlohr--channel3.zip ..
+Outputing to helium-output/cnlohr--channel3 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m14.363s
+user    0m5.516s
+sys     0m1.056s
+Processing codahale--bcrypt-ruby.zip ..
+Outputing to helium-output/codahale--bcrypt-ruby ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.644s
+user    0m1.952s
+sys     0m0.112s
+Processing concurrencykit--ck.zip ..
+Outputing to helium-output/concurrencykit--ck ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m3.432s
+user    0m18.580s
+sys     0m5.132s
+Processing confluentinc--bottledwater-pg.zip ..
+Outputing to helium-output/confluentinc--bottledwater-pg ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m13.868s
+user    0m5.096s
+sys     0m0.980s
+Processing conorpp--u2f-zero.zip ..
+Outputing to helium-output/conorpp--u2f-zero ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m47.862s
+user    0m5.828s
+sys     0m3.168s
+Processing ConradIrwin--showterm.zip ..
+Outputing to helium-output/ConradIrwin--showterm ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.789s
+user    0m0.712s
+sys     0m0.132s
+Processing Coolerfall--Android-AppDaemon.zip ..
+Outputing to helium-output/Coolerfall--Android-AppDaemon ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.363s
+user    0m0.172s
+sys     0m0.044s
+Processing coolstar--RecordMyScreen.zip ..
+Outputing to helium-output/coolstar--RecordMyScreen ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m21.448s
+user    0m3.572s
+sys     0m1.276s
+Processing coturn--coturn.zip ..
+Outputing to helium-output/coturn--coturn ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 24981 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m37.399s
+user    0m11.548s
+sys     0m4.064s
+Processing cpldcpu--light_ws2812.zip ..
+Outputing to helium-output/cpldcpu--light_ws2812 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.786s
+user    0m0.332s
+sys     0m0.108s
+Processing Cr4sh--ThinkPwn.zip ..
+Outputing to helium-output/Cr4sh--ThinkPwn ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.751s
+user    0m0.392s
+sys     0m0.056s
+Processing crmulliner--adbi.zip ..
+Outputing to helium-output/crmulliner--adbi ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.464s
+user    0m1.168s
+sys     0m0.164s
+Processing csujedihy--proximac.zip ..
+Outputing to helium-output/csujedihy--proximac ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m4.222s
+user    0m2.180s
+sys     0m0.304s
+Processing CTurt--PS4-SDK.zip ..
+Outputing to helium-output/CTurt--PS4-SDK ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m17.754s
+user    0m9.156s
+sys     0m5.480s
+Processing cuber--ngx_http_google_filter_module.zip ..
+Outputing to helium-output/cuber--ngx_http_google_filter_module ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.624s
+user    0m1.212s
+sys     0m0.296s
+Processing Cyan4973--xxHash.zip ..
+Outputing to helium-output/Cyan4973--xxHash ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m7.180s
+user    0m2.880s
+sys     0m0.880s
+Processing damellis--attiny.zip ..
+Outputing to helium-output/damellis--attiny ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.086s
+user    0m0.032s
+sys     0m0.008s
+Processing danginsburg--opengles3-book.zip ..
+Outputing to helium-output/danginsburg--opengles3-book ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m30.016s
+user    0m11.508s
+sys     0m2.536s
+Processing danielfrg--word2vec.zip ..
+Outputing to helium-output/danielfrg--word2vec ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m8.570s
+user    0m2.580s
+sys     0m0.564s
+Processing danielwaterworth--Raphters.zip ..
+Outputing to helium-output/danielwaterworth--Raphters ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.159s
+user    0m0.444s
+sys     0m0.076s
+Processing daoluan--decode-memcached.zip ..
+Outputing to helium-output/daoluan--decode-memcached ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    5m21.039s
+user    0m21.260s
+sys     0m20.132s
+Processing darkk--redsocks.zip ..
+Outputing to helium-output/darkk--redsocks ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m31.785s
+user    0m9.016s
+sys     0m2.084s
+Processing daurnimator--lua.vm.js.zip ..
+Outputing to helium-output/daurnimator--lua.vm.js ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    6m9.229s
+user    0m33.680s
+sys     0m24.476s
+Processing DaveGamble--cJSON.zip ..
+Outputing to helium-output/DaveGamble--cJSON ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m4.161s
+user    0m1.848s
+sys     0m0.236s
+Processing davidfstr--rdiscount.zip ..
+Outputing to helium-output/davidfstr--rdiscount ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m36.095s
+user    0m6.632s
+sys     0m2.428s
+Processing davidmoreno--onion.zip ..
+Outputing to helium-output/davidmoreno--onion ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m18.234s
+user    0m23.316s
+sys     0m9.304s
+Processing defuse--swatd.zip ..
+Outputing to helium-output/defuse--swatd ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.658s
+user    0m0.304s
+sys     0m0.024s
+Processing dequis--purple-facebook.zip ..
+Outputing to helium-output/dequis--purple-facebook ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.128s
+user    0m0.044s
+sys     0m0.016s
+Processing DhavalKapil--icmptunnel.zip ..
+Outputing to helium-output/DhavalKapil--icmptunnel ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.757s
+user    0m0.396s
+sys     0m0.024s
+Processing dinhviethoa--libetpan.zip ..
+Outputing to helium-output/dinhviethoa--libetpan ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    29m13.861s
+user    3m28.128s
+sys     2m5.680s
+Processing dlundquist--sniproxy.zip ..
+Outputing to helium-output/dlundquist--sniproxy ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m15.677s
+user    0m5.100s
+sys     0m0.980s
+Processing DNSPod--dnspod-sr.zip ..
+Outputing to helium-output/DNSPod--dnspod-sr ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m44.143s
+user    0m10.748s
+sys     0m9.444s
+Processing dollarshaveclub--ImageButter.zip ..
+Outputing to helium-output/dollarshaveclub--ImageButter ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m34.469s
+user    0m3.888s
+sys     0m2.064s
+Processing dorimanx--exfat-nofuse.zip ..
+Outputing to helium-output/dorimanx--exfat-nofuse ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m29.205s
+user    0m9.532s
+sys     0m1.772s
+Processing douban--beansdb.zip ..
+Outputing to helium-output/douban--beansdb ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m55.394s
+user    0m13.524s
+sys     0m2.860s
+Processing douglascrockford--DEC64.zip ..
+Outputing to helium-output/douglascrockford--DEC64 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m14.115s
+user    0m4.116s
+sys     0m0.804s
+Processing douglascrockford--JSMin.zip ..
+Outputing to helium-output/douglascrockford--JSMin ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.331s
+user    0m0.140s
+sys     0m0.020s
+Processing drh--lcc.zip ..
+Outputing to helium-output/drh--lcc ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    10m35.507s
+user    0m41.844s
+sys     0m40.136s
+Processing droe--sslsplit.zip ..
+Outputing to helium-output/droe--sslsplit ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m23.167s
+user    0m9.956s
+sys     0m1.688s
+Processing dtrace4linux--linux.zip ..
+Outputing to helium-output/dtrace4linux--linux ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing dvorka--hstr.zip ..
+Outputing to helium-output/dvorka--hstr ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m5.647s
+user    0m2.572s
+sys     0m0.424s
+Processing DynamoRIO--drmemory.zip ..
+Outputing to helium-output/DynamoRIO--drmemory ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing dynup--kpatch.zip ..
+Outputing to helium-output/dynup--kpatch ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m12.629s
+user    0m5.876s
+sys     0m0.928s
+Processing EasyHook--EasyHook.zip ..
+Outputing to helium-output/EasyHook--EasyHook ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing eclipse--mosquitto.zip ..
+Outputing to helium-output/eclipse--mosquitto ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 24699 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m6.423s
+user    0m2.208s
+sys     0m0.496s
+Processing edenhill--kafkacat.zip ..
+Outputing to helium-output/edenhill--kafkacat ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m4.612s
+user    0m1.096s
+sys     0m0.276s
+Processing edenhill--librdkafka.zip ..
+Outputing to helium-output/edenhill--librdkafka ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 28535 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m34.909s
+user    0m6.592s
+sys     0m2.440s
+Processing EionRobb--skype4pidgin.zip ..
+Outputing to helium-output/EionRobb--skype4pidgin ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m23.857s
+user    0m9.876s
+sys     0m2.036s
+Processing ejoy--ejoy2d.zip ..
+Outputing to helium-output/ejoy--ejoy2d ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    13m2.147s
+user    3m2.160s
+sys     1m20.160s
+Processing emgram769--lighthouse.zip ..
+Outputing to helium-output/emgram769--lighthouse ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.840s
+user    0m1.656s
+sys     0m0.256s
+Processing emsec--ChameleonMini.zip ..
+Outputing to helium-output/emsec--ChameleonMini ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    5m2.124s
+user    0m44.236s
+sys     0m24.508s
+Processing endrazine--wcc.zip ..
+Outputing to helium-output/endrazine--wcc ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m17.167s
+user    0m8.456s
+sys     0m1.272s
+Processing EricssonResearch--openwebrtc.zip ..
+Outputing to helium-output/EricssonResearch--openwebrtc ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m12.760s
+user    0m24.352s
+sys     0m9.696s
+Processing erikfrey--bashreduce.zip ..
+Outputing to helium-output/erikfrey--bashreduce ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.429s
+user    0m0.172s
+sys     0m0.040s
+Processing esnme--ultrajson.zip ..
+Outputing to helium-output/esnme--ultrajson ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m12.360s
+user    0m3.128s
+sys     0m0.812s
+Processing esnme--ultramysql.zip ..
+Outputing to helium-output/esnme--ultramysql ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing EtchedPixels--FUZIX.zip ..
+Outputing to helium-output/EtchedPixels--FUZIX ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing evanw--thinscript.zip ..
+Outputing to helium-output/evanw--thinscript ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m55.250s
+user    0m36.968s
+sys     0m4.544s
+Processing examplecode--mproxy.zip ..
+Outputing to helium-output/examplecode--mproxy ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.153s
+user    0m0.476s
+sys     0m0.088s
+Processing EZLippi--Tinyhttpd.zip ..
+Outputing to helium-output/EZLippi--Tinyhttpd ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.565s
+user    0m0.308s
+sys     0m0.060s
+Processing EZLippi--WebBench.zip ..
+Outputing to helium-output/EZLippi--WebBench ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.639s
+user    0m0.292s
+sys     0m0.044s
+Processing F5OEO--rpitx.zip ..
+Outputing to helium-output/F5OEO--rpitx ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m11.499s
+user    0m3.476s
+sys     0m0.816s
+Processing f9micro--f9-kernel.zip ..
+Outputing to helium-output/f9micro--f9-kernel ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    29m26.697s
+user    1m36.012s
+sys     1m56.244s
+Processing fabiensanglard--chocolate_duke3D.zip ..
+Outputing to helium-output/fabiensanglard--chocolate_duke3D ..
+Compiler Preprocessing ..
+Traceback (most recent call last):
+  File "/home/hebi/github/helium/scripts/helium-process-cpped.py", line 97, in <module>
+      remove_extra2(sys.argv[1])
+        File "/home/hebi/github/helium/scripts/helium-process-cpped.py", line 56, in remove_extra2
+            for line in open(filename):
+              File "/usr/lib/python3.5/codecs.py", line 321, in decode
+                  (result, consumed) = self._buffer_decode(data, self.errors, final)
+                  UnicodeDecodeError: 'utf-8' codec can't decode byte 0xda in position 1385: invalid continuation byte
+                  Creating snippet db ...
+                  creating snippet db ...
+                  opening tag file ...
+
+real    7m47.671s
+user    2m3.748s
+sys     0m51.548s
+Processing facebookarchive--flashcache.zip ..
+Outputing to helium-output/facebookarchive--flashcache ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m14.546s
+user    0m6.388s
+sys     0m1.020s
+Processing facebook--fb-adb.zip ..
+Outputing to helium-output/facebook--fb-adb ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    9m31.686s
+user    0m46.620s
+sys     0m36.664s
+Processing facebook--fishhook.zip ..
+Outputing to helium-output/facebook--fishhook ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.557s
+user    0m0.256s
+sys     0m0.036s
+Processing facebook--libphenom.zip ..
+Outputing to helium-output/facebook--libphenom ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m34.045s
+user    0m15.308s
+sys     0m3.048s
+Processing facebookresearch--darkforestGo.zip ..
+Outputing to helium-output/facebookresearch--darkforestGo ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 18441 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m6.879s
+user    0m3.136s
+sys     0m0.624s
+Processing facebook--transform.zip ..
+Outputing to helium-output/facebook--transform ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m7.334s
+user    0m1.400s
+sys     0m0.444s
+Processing facebook--zstd.zip ..
+Outputing to helium-output/facebook--zstd ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 23990 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m36.606s
+user    0m16.124s
+sys     0m5.724s
+Processing fancycode--MemoryModule.zip ..
+Outputing to helium-output/fancycode--MemoryModule ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.062s
+user    0m1.020s
+sys     0m0.136s
+Processing fanglingsu--vimb.zip ..
+Outputing to helium-output/fanglingsu--vimb ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m15.328s
+user    0m11.620s
+sys     0m4.800s
+Processing fcambus--logswan.zip ..
+Outputing to helium-output/fcambus--logswan ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.100s
+user    0m0.672s
+sys     0m0.124s
+Processing felixangell--mac.zip ..
+Outputing to helium-output/felixangell--mac ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m16.482s
+user    0m0.952s
+sys     0m1.164s
+Processing ffi--ffi.zip ..
+Outputing to helium-output/ffi--ffi ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    4m24.031s
+user    1m28.032s
+sys     0m33.360s
+Processing firehol--netdata.zip ..
+Outputing to helium-output/firehol--netdata ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m55.874s
+user    0m29.256s
+sys     0m6.108s
+Processing flatpak--flatpak.zip ..
+Outputing to helium-output/flatpak--flatpak ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    5m41.610s
+user    1m4.496s
+sys     0m28.744s
+Processing fnordware--AdobeWebM.zip ..
+Outputing to helium-output/fnordware--AdobeWebM ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m4.198s
+user    0m1.640s
+sys     0m0.268s
+Processing fragglet--c-algorithms.zip ..
+Outputing to helium-output/fragglet--c-algorithms ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m26.237s
+user    0m10.204s
+sys     0m1.984s
+Processing freebsd--crochet.zip ..
+Outputing to helium-output/freebsd--crochet ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.533s
+user    0m0.988s
+sys     0m0.076s
+Processing frewsxcv--afl.rs.zip ..
+Outputing to helium-output/frewsxcv--afl.rs ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m35.720s
+user    0m9.708s
+sys     0m2.620s
+Processing FRiCKLE--ngx_cache_purge.zip ..
+Outputing to helium-output/FRiCKLE--ngx_cache_purge ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.061s
+user    0m0.024s
+sys     0m0.000s
+Processing FRiCKLE--ngx_postgres.zip ..
+Outputing to helium-output/FRiCKLE--ngx_postgres ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m27.048s
+user    0m3.796s
+sys     0m1.960s
+Processing FSX--misaka.zip ..
+Outputing to helium-output/FSX--misaka ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m28.344s
+user    0m5.900s
+sys     0m1.920s
+Processing fukuchi--libqrencode.zip ..
+Outputing to helium-output/fukuchi--libqrencode ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m45.922s
+user    0m12.648s
+sys     0m3.500s
+Processing fulldecent--system-bus-radio.zip ..
+Outputing to helium-output/fulldecent--system-bus-radio ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.375s
+user    0m0.168s
+sys     0m0.028s
+Processing gabriel--yajl-objc.zip ..
+Outputing to helium-output/gabriel--yajl-objc ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m35.599s
+user    0m5.304s
+sys     0m2.564s
+Processing gamelinux--passivedns.zip ..
+Outputing to helium-output/gamelinux--passivedns ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m4.742s
+user    0m2.344s
+sys     0m0.388s
+Processing garrynewman--GWEN.zip ..
+Outputing to helium-output/garrynewman--GWEN ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 13734 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m0.439s
+user    0m0.284s
+sys     0m0.020s
+Processing gentilkiwi--mimikatz.zip ..
+Outputing to helium-output/gentilkiwi--mimikatz ..
+Compiler Preprocessing ..
+Traceback (most recent call last):
+  File "/home/hebi/github/helium/scripts/helium-process-cpped.py", line 97, in <module>
+      remove_extra2(sys.argv[1])
+        File "/home/hebi/github/helium/scripts/helium-process-cpped.py", line 56, in remove_extra2
+            for line in open(filename):
+              File "/usr/lib/python3.5/codecs.py", line 321, in decode
+                  (result, consumed) = self._buffer_decode(data, self.errors, final)
+                  UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb4 in position 626: invalid start byte
+                  Creating snippet db ...
+                  creating snippet db ...
+                  opening tag file ...
+                  Processing geocommons--geocoder.zip ..
+                  Outputing to helium-output/geocommons--geocoder ..
+                  Compiler Preprocessing ..
+                  Creating snippet db ...
+                  creating snippet db ...
+                  opening tag file ...
+
+real    6m2.905s
+user    0m27.448s
+sys     0m25.072s
+Processing geommer--yabar.zip ..
+Outputing to helium-output/geommer--yabar ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m23.505s
+user    0m2.724s
+sys     0m1.544s
+Processing ggreer--the_silver_searcher.zip ..
+Outputing to helium-output/ggreer--the_silver_searcher ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m9.214s
+user    0m3.452s
+sys     0m0.552s
+Processing ghughes--fruitstrap.zip ..
+Outputing to helium-output/ghughes--fruitstrap ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.509s
+user    0m1.224s
+sys     0m0.220s
+Processing giltene--wrk2.zip ..
+Outputing to helium-output/giltene--wrk2 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing github--brubeck.zip ..
+Outputing to helium-output/github--brubeck ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m9.646s
+user    0m3.824s
+sys     0m0.616s
+Processing github--synsanity.zip ..
+Outputing to helium-output/github--synsanity ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.493s
+user    0m0.952s
+sys     0m0.148s
+Processing glock45--iOS-Hierarchy-Viewer.zip ..
+Outputing to helium-output/glock45--iOS-Hierarchy-Viewer ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.070s
+user    0m0.032s
+sys     0m0.008s
+Processing glyptodon--guacamole-server.zip ..
+Outputing to helium-output/glyptodon--guacamole-server ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    5m3.157s
+user    0m38.636s
+sys     0m22.124s
+Processing google--eddystone.zip ..
+Outputing to helium-output/google--eddystone ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m17.254s
+user    0m4.784s
+sys     0m1.092s
+Processing google--honggfuzz.zip ..
+Outputing to helium-output/google--honggfuzz ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m16.972s
+user    0m5.760s
+sys     0m1.292s
+Processing google--ios-webkit-debug-proxy.zip ..
+Outputing to helium-output/google--ios-webkit-debug-proxy ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m15.794s
+user    0m7.684s
+sys     0m1.272s
+Processing google--latency-benchmark.zip ..
+Outputing to helium-output/google--latency-benchmark ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.471s
+user    0m1.356s
+sys     0m0.208s
+Processing google--ngx_brotli.zip ..
+Outputing to helium-output/google--ngx_brotli ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.331s
+user    0m0.676s
+sys     0m0.096s
+Processing google--nsjail.zip ..
+Outputing to helium-output/google--nsjail ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m7.819s
+user    0m2.644s
+sys     0m0.492s
+Processing google--upb.zip ..
+Outputing to helium-output/google--upb ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 23149 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m14.292s
+user    0m4.016s
+sys     0m1.140s
+Processing go-vgo--robotgo.zip ..
+Outputing to helium-output/go-vgo--robotgo ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m26.402s
+user    0m7.416s
+sys     0m1.848s
+Processing graemedouglas--LittleD.zip ..
+Outputing to helium-output/graemedouglas--LittleD ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    3m24.856s
+user    0m25.024s
+sys     0m14.248s
+Processing GrahamDumpleton--mod_wsgi.zip ..
+Outputing to helium-output/GrahamDumpleton--mod_wsgi ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m12.132s
+user    0m6.604s
+sys     0m0.744s
+Processing graphitemaster--moreram.zip ..
+Outputing to helium-output/graphitemaster--moreram ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.572s
+user    0m0.252s
+sys     0m0.044s
+Processing grbl--grbl.zip ..
+Outputing to helium-output/grbl--grbl ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m5.853s
+user    0m2.704s
+sys     0m0.420s
+Processing guardianproject--libsqlfs.zip ..
+Outputing to helium-output/guardianproject--libsqlfs ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m8.835s
+user    0m4.172s
+sys     0m0.660s
+Processing guillaumechereau--goxel.zip ..
+Outputing to helium-output/guillaumechereau--goxel ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 26870 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m4.116s
+user    0m2.524s
+sys     0m0.504s
+Processing h2o--picohttpparser.zip ..
+Outputing to helium-output/h2o--picohttpparser ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.219s
+user    0m1.140s
+sys     0m0.152s
+Processing haad--proxychains.zip ..
+Outputing to helium-output/haad--proxychains ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m5.392s
+user    0m1.840s
+sys     0m0.360s
+Processing haka-security--haka.zip ..
+Outputing to helium-output/haka-security--haka ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m49.186s
+user    0m17.980s
+sys     0m4.260s
+Processing halayli--lthread.zip ..
+Outputing to helium-output/halayli--lthread ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m20.772s
+user    0m4.736s
+sys     0m1.356s
+Processing halfninja--android-ffmpeg-x264.zip ..
+Outputing to helium-output/halfninja--android-ffmpeg-x264 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m10.054s
+user    0m5.128s
+sys     0m0.608s
+Processing hanslub42--rlwrap.zip ..
+Outputing to helium-output/hanslub42--rlwrap ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m10.662s
+user    0m4.252s
+sys     0m0.792s
+Processing happyfish100--fastdfs.zip ..
+Outputing to helium-output/happyfish100--fastdfs ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m5.579s
+user    0m33.976s
+sys     0m7.120s
+Processing HardySimpson--zlog.zip ..
+Outputing to helium-output/HardySimpson--zlog ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m16.820s
+user    0m6.464s
+sys     0m1.204s
+Processing HarveyHunt--howm.zip ..
+Outputing to helium-output/HarveyHunt--howm ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m15.253s
+user    0m3.712s
+sys     0m1.104s
+Processing hashcat--hashcat-legacy.zip ..
+Outputing to helium-output/hashcat--hashcat-legacy ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m28.071s
+user    1m10.104s
+sys     0m7.140s
+Processing havlenapetr--FFMpeg.zip ..
+Outputing to helium-output/havlenapetr--FFMpeg ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71:  3707 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    5m48.247s
+user    1m19.872s
+sys     1m5.208s
+Processing haywire--haywire.zip ..
+Outputing to helium-output/haywire--haywire ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    11m30.493s
+user    0m28.804s
+sys     0m45.824s
+Processing henkman--virgo.zip ..
+Outputing to helium-output/henkman--virgo ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.873s
+user    0m0.420s
+sys     0m0.052s
+Processing hfiref0x--UACME.zip ..
+Outputing to helium-output/hfiref0x--UACME ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing hishamhm--htop.zip ..
+Outputing to helium-output/hishamhm--htop ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    9m26.355s
+user    0m35.864s
+sys     0m36.040s
+Processing hoytech--vmtouch.zip ..
+Outputing to helium-output/hoytech--vmtouch ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.539s
+user    0m0.668s
+sys     0m0.112s
+Processing hpricot--hpricot.zip ..
+Outputing to helium-output/hpricot--hpricot ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.913s
+user    0m0.536s
+sys     0m0.040s
+Processing htacg--tidy-html5.zip ..
+Outputing to helium-output/htacg--tidy-html5 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing huangz1990--annotated_redis_source.zip ..
+Outputing to helium-output/huangz1990--annotated_redis_source ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.022s
+user    0m0.004s
+sys     0m0.000s
+Processing huangz1990--redis-3.0-annotated.zip ..
+Outputing to helium-output/huangz1990--redis-3.0-annotated ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.023s
+user    0m0.004s
+sys     0m0.000s
+Processing HunterHillegas--iOS-BetaBuilder.zip ..
+Outputing to helium-output/HunterHillegas--iOS-BetaBuilder ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m5.445s
+user    0m2.956s
+sys     0m0.364s
+Processing IanHarvey--bluepy.zip ..
+Outputing to helium-output/IanHarvey--bluepy ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m15.149s
+user    0m24.556s
+sys     0m10.216s
+Processing ice799--memprof.zip ..
+Outputing to helium-output/ice799--memprof ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m10.650s
+user    0m3.344s
+sys     0m0.700s
+Processing ideawu--icomet.zip ..
+Outputing to helium-output/ideawu--icomet ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing id-Software--DOOM.zip ..
+Outputing to helium-output/id-Software--DOOM ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing id-Software--Quake-2.zip ..
+Outputing to helium-output/id-Software--Quake-2 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    17m42.128s
+user    4m5.900s
+sys     2m2.992s
+Processing id-Software--Quake-III-Arena.zip ..
+Outputing to helium-output/id-Software--Quake-III-Arena ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing id-Software--Quake.zip ..
+Outputing to helium-output/id-Software--Quake ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing ilyash--ngs.zip ..
+Outputing to helium-output/ilyash--ngs ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    12m27.144s
+user    0m33.044s
+sys     0m45.520s
+Processing imatix--gsl.zip ..
+Outputing to helium-output/imatix--gsl ..
+Compiler Preprocessing ..
+Traceback (most recent call last):
+  File "/home/hebi/github/helium/scripts/helium-process-cpped.py", line 97, in <module>
+      remove_extra2(sys.argv[1])
+        File "/home/hebi/github/helium/scripts/helium-process-cpped.py", line 56, in remove_extra2
+            for line in open(filename):
+              File "/usr/lib/python3.5/codecs.py", line 321, in decode
+                  (result, consumed) = self._buffer_decode(data, self.errors, final)
+                  UnicodeDecodeError: 'utf-8' codec can't decode byte 0x87 in position 7195: invalid start byte
+                  Creating snippet db ...
+                  creating snippet db ...
+                  opening tag file ...
+                  n
+                  helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+                  /home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 21291 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    1m43.797s
+user    0m28.172s
+sys     0m11.836s
+Processing imazen--imageflow.zip ..
+Outputing to helium-output/imazen--imageflow ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    8m4.745s
+user    0m37.636s
+sys     0m31.316s
+Processing infinity-gbc--infinity.zip ..
+Outputing to helium-output/infinity-gbc--infinity ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m42.640s
+user    0m20.192s
+sys     0m3.728s
+Processing intel-iot-devkit--mraa.zip ..
+Outputing to helium-output/intel-iot-devkit--mraa ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    10m0.387s
+user    0m39.044s
+sys     0m37.492s
+Processing iondbproject--iondb.zip ..
+Outputing to helium-output/iondbproject--iondb ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m13.681s
+user    0m17.456s
+sys     0m8.124s
+Processing ionescu007--SimpleVisor.zip ..
+Outputing to helium-output/ionescu007--SimpleVisor ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing i-rinat--freshplayerplugin.zip ..
+Outputing to helium-output/i-rinat--freshplayerplugin ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 19852 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    3m25.468s
+user    0m41.232s
+sys     0m17.300s
+Processing jabberd2--jabberd2.zip ..
+Outputing to helium-output/jabberd2--jabberd2 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m33.483s
+user    0m42.908s
+sys     0m15.072s
+Processing jakogut--tinyvm.zip ..
+Outputing to helium-output/jakogut--tinyvm ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.115s
+user    0m0.912s
+sys     0m0.168s
+Processing jcloudpub--speedy.zip ..
+Outputing to helium-output/jcloudpub--speedy ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m22.190s
+user    0m5.264s
+sys     0m1.444s
+Processing jech--polipo.zip ..
+Outputing to helium-output/jech--polipo ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m45.177s
+user    0m18.532s
+sys     0m3.760s
+Processing jedisct1--dnscrypt-proxy.zip ..
+Outputing to helium-output/jedisct1--dnscrypt-proxy ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m37.776s
+user    1m8.608s
+sys     0m21.300s
+Processing jedisct1--libsodium.zip ..
+Outputing to helium-output/jedisct1--libsodium ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    3m29.457s
+user    0m36.248s
+sys     0m16.368s
+Processing jeelabs--esp-link.zip ..
+Outputing to helium-output/jeelabs--esp-link ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m36.746s
+user    0m15.896s
+sys     0m6.484s
+Processing jemalloc--jemalloc.zip ..
+Outputing to helium-output/jemalloc--jemalloc ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m46.892s
+user    0m21.796s
+sys     0m4.684s
+Processing jgarff--rpi_ws281x.zip ..
+Outputing to helium-output/jgarff--rpi_ws281x ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m8.975s
+user    0m1.780s
+sys     0m0.624s
+Processing jgm--peg-markdown.zip ..
+Outputing to helium-output/jgm--peg-markdown ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m30.422s
+user    0m8.052s
+sys     0m9.036s
+Processing jianfengye--nginx-1.0.14_comment.zip ..
+Outputing to helium-output/jianfengye--nginx-1.0.14_comment ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    3m15.132s
+user    1m16.352s
+sys     0m27.088s
+Processing jimon--osx_app_in_plain_c.zip ..
+Outputing to helium-output/jimon--osx_app_in_plain_c ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.466s
+user    0m0.312s
+sys     0m0.012s
+Processing jjgod--mac-dictionary-kit.zip ..
+Outputing to helium-output/jjgod--mac-dictionary-kit ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    16m45.907s
+user    0m39.104s
+sys     1m1.384s
+Processing jklmnn--imagejs.zip ..
+Outputing to helium-output/jklmnn--imagejs ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.690s
+user    0m0.380s
+sys     0m0.040s
+Processing JoeDog--siege.zip ..
+Outputing to helium-output/JoeDog--siege ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m37.103s
+user    0m11.304s
+sys     0m2.584s
+Processing jonasdn--nsntrace.zip ..
+Outputing to helium-output/jonasdn--nsntrace ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.285s
+user    0m0.532s
+sys     0m0.096s
+Processing jonashaag--bjoern.zip ..
+Outputing to helium-output/jonashaag--bjoern ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m4.289s
+user    0m1.444s
+sys     0m0.248s
+Processing jonas--tig.zip ..
+Outputing to helium-output/jonas--tig ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    21m22.371s
+user    1m0.280s
+sys     1m18.852s
+Processing jonls--redshift.zip ..
+Outputing to helium-output/jonls--redshift ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m12.300s
+user    0m4.012s
+sys     0m0.924s
+Processing jordansissel--xdotool.zip ..
+Outputing to helium-output/jordansissel--xdotool ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m13.489s
+user    0m4.944s
+sys     0m0.860s
+Processing jorisvink--kore.zip ..
+Outputing to helium-output/jorisvink--kore ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    2m46.738s
+user    0m16.080s
+sys     0m11.408s
+Processing jpmens--jo.zip ..
+Outputing to helium-output/jpmens--jo ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m4.804s
+user    0m1.652s
+sys     0m0.232s
+Processing jpountz--lz4-java.zip ..
+Outputing to helium-output/jpountz--lz4-java ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m41.117s
+user    0m9.840s
+sys     0m3.028s
+Processing jrudolph--perf-map-agent.zip ..
+Outputing to helium-output/jrudolph--perf-map-agent ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.790s
+user    0m0.360s
+sys     0m0.040s
+Processing jsdf--pce.zip ..
+Outputing to helium-output/jsdf--pce ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing json-c--json-c.zip ..
+Outputing to helium-output/json-c--json-c ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m1.438s
+user    0m7.624s
+sys     0m4.268s
+Processing juhovh--shairplay.zip ..
+Outputing to helium-output/juhovh--shairplay ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71:  9456 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m6.981s
+user    0m1.488s
+sys     0m0.524s
+Processing justinfrankel--licecap.zip ..
+Outputing to helium-output/justinfrankel--licecap ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing juuso--keychaindump.zip ..
+Outputing to helium-output/juuso--keychaindump ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.803s
+user    0m0.396s
+sys     0m0.052s
+Processing jwiegley--git-scripts.zip ..
+Outputing to helium-output/jwiegley--git-scripts ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.357s
+user    0m0.696s
+sys     0m0.100s
+Processing karlstav--cava.zip ..
+Outputing to helium-output/karlstav--cava ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m5.227s
+user    0m1.904s
+sys     0m0.400s
+Processing karthick18--inception.zip ..
+Outputing to helium-output/karthick18--inception ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.369s
+user    0m1.276s
+sys     0m0.160s
+Processing Kazade--kazmath.zip ..
+Outputing to helium-output/Kazade--kazmath ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 31882 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m2.361s
+user    0m1.120s
+sys     0m0.172s
+Processing kbranigan--cJSON.zip ..
+Outputing to helium-output/kbranigan--cJSON ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.928s
+user    0m1.832s
+sys     0m0.164s
+Processing keendreams--keen.zip ..
+Outputing to helium-output/keendreams--keen ..
+Compiler Preprocessing ..
+Traceback (most recent call last):
+  File "/home/hebi/github/helium/scripts/helium-process-cpped.py", line 97, in <module>
+      remove_extra2(sys.argv[1])
+        File "/home/hebi/github/helium/scripts/helium-process-cpped.py", line 56, in remove_extra2
+            for line in open(filename):
+              File "/usr/lib/python3.5/codecs.py", line 321, in decode
+                  (result, consumed) = self._buffer_decode(data, self.errors, final)
+                  UnicodeDecodeError: 'utf-8' codec can't decode byte 0xdc in position 725: invalid continuation byte
+                  Creating snippet db ...
+                  creating snippet db ...
+                  opening tag file ...
+
+real    1m50.521s
+user    0m23.092s
+sys     0m8.352s
+Processing kennytm--iphone-private-frameworks.zip ..
+Outputing to helium-output/kennytm--iphone-private-frameworks ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 27993 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m57.489s
+user    0m21.940s
+sys     0m7.008s
+Processing kernelslacker--trinity.zip ..
+Outputing to helium-output/kernelslacker--trinity ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    5m6.495s
+user    0m47.620s
+sys     0m23.012s
+Processing kevinlawler--kona.zip ..
+Outputing to helium-output/kevinlawler--kona ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m37.859s
+user    0m25.216s
+sys     0m7.400s
+Processing kgabis--parson.zip ..
+Outputing to helium-output/kgabis--parson ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m10.631s
+user    0m3.560s
+sys     0m0.676s
+Processing klange--nyancat.zip ..
+Outputing to helium-output/klange--nyancat ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.122s
+user    0m0.540s
+sys     0m0.052s
+Processing knopwob--dunst.zip ..
+Outputing to helium-output/knopwob--dunst ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m11.100s
+user    0m3.988s
+sys     0m0.732s
+Processing kohler--gifsicle.zip ..
+Outputing to helium-output/kohler--gifsicle ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m38.355s
+user    0m16.036s
+sys     0m3.344s
+Processing kokke--tiny-AES128-C.zip ..
+Outputing to helium-output/kokke--tiny-AES128-C ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m1.371s
+user    0m0.736s
+sys     0m0.060s
+Processing koush--Superuser.zip ..
+Outputing to helium-output/koush--Superuser ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    3m41.855s
+user    2m21.472s
+sys     0m20.940s
+Processing krakjoe--pthreads.zip ..
+Outputing to helium-output/krakjoe--pthreads ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m9.075s
+user    0m3.840s
+sys     0m0.724s
+Processing krallin--tini.zip ..
+Outputing to helium-output/krallin--tini ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.656s
+user    0m0.348s
+sys     0m0.028s
+Processing kr--beanstalkd.zip ..
+Outputing to helium-output/kr--beanstalkd ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m15.534s
+user    0m5.836s
+sys     0m1.148s
+Processing ktap--ktap.zip ..
+Outputing to helium-output/ktap--ktap ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing lanoxx--tilda.zip ..
+Outputing to helium-output/lanoxx--tilda ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m26.357s
+user    0m6.168s
+sys     0m1.768s
+Processing laruence--php7-internal.zip ..
+Outputing to helium-output/laruence--php7-internal ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.052s
+user    0m0.020s
+sys     0m0.000s
+Processing laruence--yaconf.zip ..
+Outputing to helium-output/laruence--yaconf ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.726s
+user    0m0.344s
+sys     0m0.048s
+Processing laruence--yac.zip ..
+Outputing to helium-output/laruence--yac ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.398s
+user    0m1.192s
+sys     0m0.156s
+Processing laruence--yaf.zip ..
+Outputing to helium-output/laruence--yaf ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m7.048s
+user    0m3.932s
+sys     0m0.480s
+Processing laruence--yar.zip ..
+Outputing to helium-output/laruence--yar ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m5.993s
+user    0m2.464s
+sys     0m0.348s
+Processing lastpass--lastpass-cli.zip ..
+Outputing to helium-output/lastpass--lastpass-cli ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m48.685s
+user    0m9.724s
+sys     0m3.332s
+Processing laverdet--node-fibers.zip ..
+Outputing to helium-output/laverdet--node-fibers ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.572s
+user    0m0.244s
+sys     0m0.040s
+Processing lefcha--imapfilter.zip ..
+Outputing to helium-output/lefcha--imapfilter ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m29.883s
+user    0m5.616s
+sys     0m1.960s
+Processing LemonBoy--bar.zip ..
+Outputing to helium-output/LemonBoy--bar ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m4.744s
+user    0m1.392s
+sys     0m0.300s
+Processing lericson--pylibmc.zip ..
+Outputing to helium-output/lericson--pylibmc ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.554s
+user    0m1.708s
+sys     0m0.252s
+Processing lesovsky--pgcenter.zip ..
+Outputing to helium-output/lesovsky--pgcenter ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m55.196s
+user    0m5.372s
+sys     0m3.404s
+Processing leurfete--simple-rootkit.zip ..
+Outputing to helium-output/leurfete--simple-rootkit ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.241s
+user    0m0.108s
+sys     0m0.012s
+Processing lh3--bwa.zip ..
+Outputing to helium-output/lh3--bwa ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m45.755s
+user    0m23.624s
+sys     0m4.064s
+Processing libffi--libffi.zip ..
+Outputing to helium-output/libffi--libffi ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m13.211s
+user    0m20.856s
+sys     0m6.108s
+Processing libfuse--libfuse.zip ..
+Outputing to helium-output/libfuse--libfuse ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    4m30.004s
+user    0m27.888s
+sys     0m18.688s
+Processing libfuse--sshfs.zip ..
+Outputing to helium-output/libfuse--sshfs ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m12.058s
+user    0m4.896s
+sys     0m1.060s
+Processing libgit2--php-git.zip ..
+Outputing to helium-output/libgit2--php-git ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m2.602s
+user    0m1.256s
+sys     0m0.260s
+Processing libgit2--pygit2.zip ..
+Outputing to helium-output/libgit2--pygit2 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m19.290s
+user    0m12.612s
+sys     0m5.760s
+Processing libimobiledevice--libimobiledevice.zip ..
+Outputing to helium-output/libimobiledevice--libimobiledevice ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    3m26.656s
+user    0m21.512s
+sys     0m13.912s
+Processing libopencm3--libopencm3.zip ..
+Outputing to helium-output/libopencm3--libopencm3 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing libressl-portable--portable.zip ..
+Outputing to helium-output/libressl-portable--portable ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.651s
+user    0m1.696s
+sys     0m0.228s
+Processing Librevault--librevault.zip ..
+Outputing to helium-output/Librevault--librevault ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 16161 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m12.237s
+user    0m9.056s
+sys     0m2.104s
+Processing libusb--libusb.zip ..
+Outputing to helium-output/libusb--libusb ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    5m48.416s
+user    0m47.224s
+sys     0m22.424s
+Processing liexusong--php-beast.zip ..
+Outputing to helium-output/liexusong--php-beast ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m8.425s
+user    0m3.232s
+sys     0m0.484s
+Processing lloyd--yajl.zip ..
+Outputing to helium-output/lloyd--yajl ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m43.162s
+user    0m6.156s
+sys     0m2.652s
+Processing LMDB--lmdb.zip ..
+Outputing to helium-output/LMDB--lmdb ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m0.028s
+user    0m0.004s
+sys     0m0.000s
+Processing LongSoft--UEFITool.zip ..
+Outputing to helium-output/LongSoft--UEFITool ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+n
+helium: src/resolver/snippet.cc:101: SnippetKind char_to_snippet_kind(char): Assertion `false' failed.
+/home/hebi/github/helium/scripts/helium-preprocess.sh: line 71: 28997 Aborted                 helium --create-snippet-db cpped > /dev/null
+
+real    0m0.145s
+user    0m0.064s
+sys     0m0.008s
+Processing lotabout--write-a-C-interpreter.zip ..
+Outputing to helium-output/lotabout--write-a-C-interpreter ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    16m32.375s
+user    0m25.304s
+sys     0m59.956s
+Processing lpereira--lwan.zip ..
+Outputing to helium-output/lpereira--lwan ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m18.834s
+user    0m16.476s
+sys     0m5.872s
+Processing lpsantil--rt0.zip ..
+Outputing to helium-output/lpsantil--rt0 ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    0m3.617s
+user    0m0.764s
+sys     0m0.232s
+Processing lsalzman--enet.zip ..
+Outputing to helium-output/lsalzman--enet ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m30.396s
+user    0m9.252s
+sys     0m5.768s
+Processing LuaDist--lua.zip ..
+Outputing to helium-output/LuaDist--lua ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    6m10.907s
+user    0m35.960s
+sys     0m24.744s
+Processing LuaJIT--LuaJIT.zip ..
+Outputing to helium-output/LuaJIT--LuaJIT ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+Processing lua--lua.zip ..
+Outputing to helium-output/lua--lua ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    9m20.666s
+user    0m43.908s
+sys     0m36.216s
+Processing luigirizzo--netmap.zip ..
+Outputing to helium-output/luigirizzo--netmap ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+
+real    1m11.065s
+user    0m26.768s
+sys     0m6.936s
+Processing lwfinger--rtlwifi_new.zip ..
+Outputing to helium-output/lwfinger--rtlwifi_new ..
+Compiler Preprocessing ..
+Creating snippet db ...
+creating snippet db ...
+opening tag file ...
+```

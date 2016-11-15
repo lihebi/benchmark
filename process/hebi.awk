@@ -17,7 +17,11 @@ BEGIN {
     # output the previous benchmark
     if (length(bench)>0) {
         print bench
+        # calculate suc/fail for this proj
+        print bench "," benchsuc "," benchfail >> "bench.csv"
     }
+    benchsuc=0
+    benchfail=0
     # if 
     bench=$3;
     print bench
@@ -35,9 +39,11 @@ BEGIN {
     # log down the data
     # print nodenum, $2
     if ($2 == "true") {
+        benchsuc++
         print nodenum >> "true.txt"
     } else {
         print nodenum >> "false.txt"
+        benchfail++
     }
 }
 

@@ -1,0 +1,153 @@
+Benchmark Name: .
+Number of point of interest: 1
+Starting Helium on point of interest: helium-output/polymorph-0.4.0/cpped/polymorph.c:118
+Converted linum after preprocessing: 105
+Constructing a segment ..
+Initial query: 1
+Helium Processing ...
+Processing query with the head node: [1;36mstrcpy( target, opta...[31m 0[0m remaining in worklist.
+Input Variables: 	PointerType: CharType:char* optarg
+Input Variables: 	ArrayType:char[2048] target
+[1;35mSegment Meta:[0m
+	AST Node Number: 1
+	Segment Size (LOC): 2
+	Procedure Number: 1
+	Branch Number: 0
+	Loop Number: 0
+	Code Written to: /tmp/helium-test-tmp.yThVcC
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 2
+	Number of tests: 100
+	Test Generation Time: 0.013 seconds
+running bash -c "cd /tmp/helium-test-tmp.yThVcC; ./test.sh"
+	Testing-Time: 0.644 seconds
+Testing result:
+
+	Stmt Coverage: 43.14% of 51
+	Branch Coverage: 42.86% of 14
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+output_int_optarg.strlen = input_int_optarg.strlen 
+output_addr_optarg = input_addr_optarg 
+output_int_optarg_heapsize = input_int_optarg_heapsize 
+output_int_target.strlen = input_int_target.strlen 
+output_addr_target = input_addr_target 
+Constant output variable:
+output_int_target.size = 2048 
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  100 
+Total reach poi:  100 
+Total fail poi:  55 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 1 can be mapped.
+The failure condition:
+	output_int_target.size < output_int_optarg.strlen
+The transfer functions:
+	output_int_target.size = 2048
+All used transfer funtions:
+	output_int_optarg.strlen = input_int_optarg.strlen
+	output_int_target.size = 2048
+[1;32mPOI is covered[0m
+[1;32mBug is triggered.[0m
+Processing query with the head node: [1;36mswitch (o)[31m 0[0m remaining in worklist.
+Input Variables: 	IntType:int o
+Input Variables: 	PointerType: CharType:char* optarg
+Input Variables: 	ArrayType:char[2048] target
+[1;35mSegment Meta:[0m
+	AST Node Number: 3
+	Segment Size (LOC): 4
+	Procedure Number: 1
+	Branch Number: 0
+	Loop Number: 0
+	Code Written to: /tmp/helium-test-tmp.MnCwLY
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 3
+	Number of tests: 100
+	Test Generation Time: 0.011 seconds
+running bash -c "cd /tmp/helium-test-tmp.MnCwLY; ./test.sh"
+	Testing-Time: 0.476 seconds
+Testing result:
+
+	Stmt Coverage: 56.86% of 51
+	Branch Coverage: 57.14% of 14
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+Constant output variable:
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  100 
+Total reach poi:  0 
+Total fail poi:  0 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 0 can be mapped.
+The failure condition:
+	output_int_target.size < output_int_optarg.strlen
+The transfer functions:
+All used transfer funtions:
+[31mPOI is not covered[0m
+[31mBug is not triggered.[0m
+Processing query with the head node: [1;36mwhile (( o = getopt(...[31m 0[0m remaining in worklist.
+Input Variables: 	IntType:int argc
+Input Variables: 	PointerType: PointerType: CharType:char** argv
+Input Variables: 	IntType:int o
+Input Variables: 	PointerType: CharType:char* optarg
+Input Variables: 	ArrayType:char[2048] target
+[1;35mSegment Meta:[0m
+	AST Node Number: 4
+	Segment Size (LOC): 5
+	Procedure Number: 1
+	Branch Number: 0
+	Loop Number: 1
+	Code Written to: /tmp/helium-test-tmp.WgeS1n
+	Compile: true
+[1;36machtvf:[0m
+[1;35mTest Meta:[0m
+	Number of input variables: 5
+	Number of tests: 100
+	Test Generation Time: 0.048 seconds
+running bash -c "cd /tmp/helium-test-tmp.WgeS1n; ./test.sh"
+	Testing-Time: 0.609 seconds
+Testing result:
+
+	Stmt Coverage: 69.33% of 75
+	Branch Coverage: 64.29% of 28
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+output_int_target.strlen = input_int_target.strlen 
+output_addr_target = input_addr_target 
+Constant output variable:
+output_int_target.size = 2048 
+Trans from two inputs:
+Trans from two inputs:
+[1] 23
+[1] 23
+output_int_optarg_heapsize = oneofargv 
+[1] 24
+[1] 23
+output_int_optarg.strlen = oneofargv 
+
+[1;35mResult Meta: [0m
+Total test:  100 
+Total reach poi:  53 
+Total fail poi:  33 
+
+Using:
+	output_int_optarg.strlen = oneofargv
+	output_int_target.size = 2048
+On top of failure condition:
+	output_int_target.size < output_int_optarg.strlen
+output smt to /tmp/helium-b5ULxU/helium.smt
+[1;32m== Query Resolved![0m

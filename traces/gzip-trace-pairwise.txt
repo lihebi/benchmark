@@ -1,0 +1,578 @@
+Benchmark Name: .
+Number of point of interest: 1
+Starting Helium on point of interest: helium-output/gzip-1.2.4/cpped/gzip.c:1009
+Converted linum after preprocessing: 781
+Constructing a segment ..
+Initial query: 1
+Helium Processing ...
+Processing query with the head node: [1;36mstrcpy(ifname, iname...[31m 0[0m remaining in worklist.
+StructType: tree_desc
+StructType: ct_data
+StructType: config
+StructType: tree_desc
+StructType: ct_data
+StructType: ct_data
+StructType: tree_desc
+StructType: ct_data
+StructType: ct_data
+Input Variables: 	ArrayType:char[1024] ifname
+Input Variables: 	PointerType: CharType:char* iname
+[1;35mSegment Meta:[0m
+	AST Node Number: 1
+	Segment Size (LOC): 2
+	Procedure Number: 1
+	Branch Number: 0
+	Loop Number: 0
+	Code Written to: /tmp/helium-test-tmp.UVK6MX
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 2
+	Number of tests: 100
+	Test Generation Time: 0.001 seconds
+running bash -c "cd /tmp/helium-test-tmp.UVK6MX; ./test.sh"
+	Testing-Time: 0.685 seconds
+Testing result:
+
+	Stmt Coverage: 43.14% of 51
+	Branch Coverage: 42.86% of 14
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+output_int_ifname.strlen = input_int_ifname.strlen 
+output_int_iname.strlen = input_int_iname.strlen 
+output_addr_ifname = input_addr_ifname 
+output_addr_iname = input_addr_iname 
+output_int_iname_heapsize = input_int_iname_heapsize 
+Constant output variable:
+output_int_ifname.size = 1024 
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  100 
+Total reach poi:  100 
+Total fail poi:  60 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 1 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+	output_int_ifname.size = 1024
+All used transfer funtions:
+	output_int_ifname.size = 1024
+	output_int_iname.strlen = input_int_iname.strlen
+[1;32mPOI is covered[0m
+[1;32mBug is triggered.[0m
+Processing query with the head node: [1;36mchar *s;[31m 0[0m remaining in worklist.
+Input Variables: 	ArrayType:char[1024] ifname
+Input Variables: 	PointerType: CharType:char* iname
+[1;35mSegment Meta:[0m
+	AST Node Number: 2
+	Segment Size (LOC): 3
+	Procedure Number: 1
+	Branch Number: 0
+	Loop Number: 0
+	Code Written to: /tmp/helium-test-tmp.8b7gmV
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 2
+	Number of tests: 100
+	Test Generation Time: 0.001 seconds
+running bash -c "cd /tmp/helium-test-tmp.8b7gmV; ./test.sh"
+	Testing-Time: 0.674 seconds
+Testing result:
+
+	Stmt Coverage: 43.14% of 51
+	Branch Coverage: 42.86% of 14
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+output_addr_iname = input_addr_iname 
+output_int_iname_heapsize = input_int_iname_heapsize 
+output_int_iname.strlen = input_int_iname.strlen 
+output_addr_ifname = input_addr_ifname 
+output_int_ifname.strlen = input_int_ifname.strlen 
+Constant output variable:
+output_int_ifname.size = 1024 
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  100 
+Total reach poi:  100 
+Total fail poi:  60 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 1 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+	output_int_ifname.size = 1024
+All used transfer funtions:
+	output_int_ifname.size = 1024
+	output_int_iname.strlen = input_int_iname.strlen
+[1;32mPOI is covered[0m
+[1;32mBug is triggered.[0m
+Processing query with the head node: [1;36mchar **suf = suffixe...[31m 0[0m remaining in worklist.
+Input Variables: 	PointerType: PointerType: CharType:char** suffixes
+Input Variables: 	ArrayType:char[1024] ifname
+Input Variables: 	PointerType: CharType:char* iname
+[1;35mSegment Meta:[0m
+	AST Node Number: 3
+	Segment Size (LOC): 4
+	Procedure Number: 1
+	Branch Number: 0
+	Loop Number: 0
+	Code Written to: /tmp/helium-test-tmp.jw0IxW
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 3
+	Number of tests: 300
+	Test Generation Time: 0.002 seconds
+running bash -c "cd /tmp/helium-test-tmp.jw0IxW; ./test.sh"
+	Testing-Time: 2.273 seconds
+Testing result:
+
+	Stmt Coverage: 62.67% of 75
+	Branch Coverage: 71.43% of 28
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+output_int_ifname.strlen = input_int_ifname.strlen 
+output_addr_iname = input_addr_iname 
+output_int_iname.strlen = input_int_iname.strlen 
+output_int_iname_heapsize = input_int_iname_heapsize 
+output_addr_ifname = input_addr_ifname 
+Constant output variable:
+output_int_ifname.size = 1024 
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  300 
+Total reach poi:  300 
+Total fail poi:  246 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 1 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+	output_int_ifname.size = 1024
+All used transfer funtions:
+	output_int_ifname.size = 1024
+	output_int_iname.strlen = input_int_iname.strlen
+[1;32mPOI is covered[0m
+[1;32mBug is triggered.[0m
+Processing query with the head node: [1;36mstatic char *suffixe...[31m 0[0m remaining in worklist.
+Input Variables: 	ArrayType:char[30] z_suffix
+Input Variables: 	ArrayType:char[1024] ifname
+Input Variables: 	PointerType: CharType:char* iname
+[1;35mSegment Meta:[0m
+	AST Node Number: 4
+	Segment Size (LOC): 5
+	Procedure Number: 1
+	Branch Number: 0
+	Loop Number: 0
+	Code Written to: /tmp/helium-test-tmp.8SVbk7
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 3
+	Number of tests: 300
+	Test Generation Time: 0.002 seconds
+running bash -c "cd /tmp/helium-test-tmp.8SVbk7; ./test.sh"
+	Testing-Time: 2.274 seconds
+Testing result:
+
+	Stmt Coverage: 29.33% of 75
+	Branch Coverage: 21.43% of 28
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+output_addr_ifname = input_addr_ifname 
+output_int_iname_heapsize = input_int_iname_heapsize 
+output_int_iname.strlen = input_int_iname.strlen 
+output_addr_iname = input_addr_iname 
+output_int_ifname.strlen = input_int_ifname.strlen 
+Constant output variable:
+output_int_ifname.size = 1024 
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  300 
+Total reach poi:  270 
+Total fail poi:  218 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 1 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+	output_int_ifname.size = 1024
+All used transfer funtions:
+	output_int_ifname.size = 1024
+	output_int_iname.strlen = input_int_iname.strlen
+[1;32mPOI is covered[0m
+[1;32mBug is triggered.[0m
+Processing query with the head node: [1;36mint ilen;[31m 0[0m remaining in worklist.
+Input Variables: 	ArrayType:char[30] z_suffix
+Input Variables: 	ArrayType:char[1024] ifname
+Input Variables: 	PointerType: CharType:char* iname
+[1;35mSegment Meta:[0m
+	AST Node Number: 5
+	Segment Size (LOC): 6
+	Procedure Number: 1
+	Branch Number: 0
+	Loop Number: 0
+	Code Written to: /tmp/helium-test-tmp.0ynNEr
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 3
+	Number of tests: 300
+	Test Generation Time: 0.002 seconds
+running bash -c "cd /tmp/helium-test-tmp.0ynNEr; ./test.sh"
+	Testing-Time: 2.348 seconds
+Testing result:
+
+	Stmt Coverage: 29.33% of 75
+	Branch Coverage: 21.43% of 28
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+output_addr_iname = input_addr_iname 
+output_addr_ifname = input_addr_ifname 
+output_int_ifname.strlen = input_int_ifname.strlen 
+output_int_iname_heapsize = input_int_iname_heapsize 
+output_int_iname.strlen = input_int_iname.strlen 
+Constant output variable:
+output_int_ifname.size = 1024 
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  300 
+Total reach poi:  267 
+Total fail poi:  244 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 1 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+	output_int_ifname.size = 1024
+All used transfer funtions:
+	output_int_ifname.size = 1024
+	output_int_iname.strlen = input_int_iname.strlen
+[1;32mPOI is covered[0m
+[1;32mBug is triggered.[0m
+Processing query with the head node: [1;36mget_istat(char* inam...[31m 0[0m remaining in worklist.
+Getting interprocedure predecessor from ICFG, function: get_istat
+Predecessor count: 1
+if (get_istat(iname, &istat) != 0)
+Processing query with the head node: [1;36mif (get_istat(iname,...[31m 0[0m remaining in worklist.
+Input Variables: 	PointerType: CharType:char* iname
+Input Variables: 	UnknownType: struct stat:struct stat istat
+[1;35mSegment Meta:[0m
+	AST Node Number: 7
+	Segment Size (LOC): 10
+	Procedure Number: 2
+	Branch Number: 1
+	Loop Number: 0
+	Code Written to: /tmp/helium-test-tmp.y8P2YV
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 2
+	Number of tests: 100
+	Test Generation Time: 0.001 seconds
+running bash -c "cd /tmp/helium-test-tmp.y8P2YV; ./test.sh"
+	Testing-Time: 0.714 seconds
+Testing result:
+
+	Stmt Coverage: 29.33% of 75
+	Branch Coverage: 21.43% of 28
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+output_int_iname.strlen = input_int_iname.strlen 
+output_addr_iname = input_addr_iname 
+output_int_iname_heapsize = input_int_iname_heapsize 
+Constant output variable:
+output_int_ifname.size = 1024 
+output_int_ifname.strlen = 0 
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  100 
+Total reach poi:  100 
+Total fail poi:  70 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 1 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+	output_int_ifname.size = 1024
+All used transfer funtions:
+	output_int_ifname.size = 1024
+	output_int_iname.strlen = input_int_iname.strlen
+[1;32mPOI is covered[0m
+[1;32mBug is triggered.[0m
+Processing query with the head node: [1;36mif ((strcmp((iname),...[31m 0[0m remaining in worklist.
+Input Variables: 	PointerType: CharType:char* iname
+Input Variables: 	UnknownType: struct stat:struct stat istat
+[1;35mSegment Meta:[0m
+	AST Node Number: 8
+	Segment Size (LOC): 12
+	Procedure Number: 2
+	Branch Number: 2
+	Loop Number: 0
+	Code Written to: /tmp/helium-test-tmp.v7Iebu
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 2
+	Number of tests: 100
+	Test Generation Time: 0.001 seconds
+running bash -c "cd /tmp/helium-test-tmp.v7Iebu; ./test.sh"
+	Testing-Time: 0.713 seconds
+Testing result:
+
+	Stmt Coverage: 29.33% of 75
+	Branch Coverage: 21.43% of 28
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+output_int_iname.strlen = input_int_iname.strlen 
+output_int_iname_heapsize = input_int_iname_heapsize 
+Constant output variable:
+output_int_ifname.size = 1024 
+output_int_ifname.strlen = 0 
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  100 
+Total reach poi:  70 
+Total fail poi:  50 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 1 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+	output_int_ifname.size = 1024
+All used transfer funtions:
+	output_int_ifname.size = 1024
+	output_int_iname.strlen = input_int_iname.strlen
+[1;32mPOI is covered[0m
+[1;32mBug is triggered.[0m
+Processing query with the head node: [1;36mtreat_file(char* ina...[31m 0[0m remaining in worklist.
+Getting interprocedure predecessor from ICFG, function: treat_file
+Predecessor count: 1
+treat_file(argv[optind++]);
+
+Processing query with the head node: [1;36mtreat_file(argv[opti...[31m 0[0m remaining in worklist.
+Input Variables: 	PointerType: PointerType: CharType:char** argv
+[1;35mSegment Meta:[0m
+	AST Node Number: 10
+	Segment Size (LOC): 15
+	Procedure Number: 3
+	Branch Number: 2
+	Loop Number: 0
+	Code Written to: /tmp/helium-test-tmp.nYVPk6
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 1
+	Number of tests: 10
+	Test Generation Time: 0.000 seconds
+running bash -c "cd /tmp/helium-test-tmp.nYVPk6; ./test.sh"
+	Testing-Time: 0.093 seconds
+Testing result:
+
+	Stmt Coverage: 
+	Branch Coverage: 
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+Constant output variable:
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  10 
+Total reach poi:  0 
+Total fail poi:  0 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 0 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+All used transfer funtions:
+[31mPOI is not covered[0m
+[31mBug is not triggered.[0m
+Processing query with the head node: [1;36mwhile (optind < argc...[31m 0[0m remaining in worklist.
+Input Variables: 	IntType:int argc
+Input Variables: 	PointerType: PointerType: CharType:char** argv
+[1;35mSegment Meta:[0m
+	AST Node Number: 11
+	Segment Size (LOC): 16
+	Procedure Number: 3
+	Branch Number: 2
+	Loop Number: 1
+	Code Written to: /tmp/helium-test-tmp.ly4heK
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 2
+	Number of tests: 200
+	Test Generation Time: 0.001 seconds
+running bash -c "cd /tmp/helium-test-tmp.ly4heK; ./test.sh"
+	Testing-Time: 1.339 seconds
+Testing result:
+
+	Stmt Coverage: 70.67% of 75
+	Branch Coverage: 71.43% of 28
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+Constant output variable:
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  200 
+Total reach poi:  0 
+Total fail poi:  0 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 0 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+All used transfer funtions:
+[31mPOI is not covered[0m
+[31mBug is not triggered.[0m
+Processing query with the head node: [1;36mif (to_stdout && !te...[31m 0[0m remaining in worklist.
+Input Variables: 	IntType:int ascii
+Input Variables: 	IntType:int decompress
+Input Variables: 	IntType:int list
+Input Variables: 	IntType:int test
+Input Variables: 	IntType:int to_stdout
+Input Variables: 	IntType:int argc
+Input Variables: 	PointerType: PointerType: CharType:char** argv
+[1;35mSegment Meta:[0m
+	AST Node Number: 12
+	Segment Size (LOC): 18
+	Procedure Number: 3
+	Branch Number: 3
+	Loop Number: 1
+	Code Written to: /tmp/helium-test-tmp.dtE4Iu
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 7
+	Number of tests: 1000
+	Test Generation Time: 0.157 seconds
+running bash -c "cd /tmp/helium-test-tmp.dtE4Iu; ./test.sh"
+	Testing-Time: 6.940 seconds
+Testing result:
+
+	Stmt Coverage: 70.67% of 75
+	Branch Coverage: 71.43% of 28
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+Constant output variable:
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  1000 
+Total reach poi:  0 
+Total fail poi:  0 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 0 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+All used transfer funtions:
+[31mPOI is not covered[0m
+[31mBug is not triggered.[0m
+Processing query with the head node: [1;36mif (file_count != 0)[31m 0[0m remaining in worklist.
+Input Variables: 	IntType:int file_count
+Input Variables: 	IntType:int ascii
+Input Variables: 	IntType:int decompress
+Input Variables: 	IntType:int list
+Input Variables: 	IntType:int test
+Input Variables: 	IntType:int to_stdout
+Input Variables: 	IntType:int argc
+Input Variables: 	PointerType: PointerType: CharType:char** argv
+[1;35mSegment Meta:[0m
+	AST Node Number: 13
+	Segment Size (LOC): 20
+	Procedure Number: 3
+	Branch Number: 4
+	Loop Number: 1
+	Code Written to: /tmp/helium-test-tmp.2Ho08F
+	Compile: true
+[1;35mTest Meta:[0m
+	Number of input variables: 8
+	Number of tests: 1000
+	Test Generation Time: 0.316 seconds
+running bash -c "cd /tmp/helium-test-tmp.2Ho08F; ./test.sh"
+	Testing-Time: 7.281 seconds
+Testing result:
+
+	Stmt Coverage: 70.67% of 75
+	Branch Coverage: 71.43% of 28
+[1;35mResult Transfer Function: [0m
+Transfer functions:
+Constant output variable:
+Trans from two inputs:
+Trans from two inputs:
+
+[1;35mResult Meta: [0m
+Total test:  1000 
+Total reach poi:  0 
+Total fail poi:  0 
+
+== Resolve failed.
+The output variables in FC cannot be all mapped.
+Output variables in FC: 2
+Out of which, 0 can be mapped.
+The failure condition:
+	output_int_iname.strlen > output_int_ifname.size
+The transfer functions:
+All used transfer funtions:
+[31mPOI is not covered[0m
+[31mBug is not triggered.[0m
+Processing query with the head node: [1;36mif (do_lzw && !decom...[31m 1[0m remaining in worklist.
+Input Variables: 	IntType:int decompress
+Input Variables: 	IntType:int do_lzw
+Input Variables: 	IntType:int file_count
+Input Variables: 	IntType:int ascii
+Input Variables: 	IntType:int list
+Input Variables: 	IntType:int test
+Input Variables: 	IntType:int to_stdout
+Input Variables: 	IntType:int argc
+Input Variables: 	PointerType: PointerType: CharType:char** argv
+[1;35mSegment Meta:[0m
+	AST Node Number: 14
+	Segment Size (LOC): 22
+	Procedure Number: 3
+	Branch Number: 5
+	Loop Number: 1
+	Code Written to: /tmp/helium-test-tmp.hutGhk
+	Compile: true

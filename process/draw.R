@@ -13,6 +13,26 @@ y1=df$suc
 y2=df$fail
 y3=y1/(y1+y2)
 
+
+##############################
+## Some data analysis
+##############################
+
+size <- df$size
+suc <- df$suc
+fail <- df$fail
+br <- suc / fail
+
+## buildrate for segments with more than 20 node
+suc20 <- sum(suc[size>20])
+fail20 <- sum(fail[size>20])
+br20 <- suc20 / (suc20 + fail20)
+
+
+##############################
+## Figure
+##############################
+
 jpeg('br-by-size.jpg', height=480, width=640)
 ## png(filename="test2.png", height=295, width=300, bg="white")
 ## plot(x,y3)
@@ -45,9 +65,9 @@ df <- read.csv(csvfile)
 names(df) <- c("proj", "suc", "fail")
 df$total <- (df$suc+df$fail)
 df$br <- round(df$suc / df$total, digits=3)
-dim(df)
-df <- df[which(df$suc+df$fail>10),]
-dim(df)
+## dim(df)
+df <- df[which(df$suc+df$fail>0),]
+## dim(df)
 
 suc <- df$suc
 fail <- df$fail
@@ -58,6 +78,19 @@ for (limit in seq(0.1,1,by=0.1)) {
     x <- c(x,length(which(br < limit & br > limit-0.1)))
 }
 
+#################################
+## Some statistics about the data
+#################################
+
+## number of projects have more than 50% buildrate
+length(which(br>=0.5))
+## the percentage
+length(which(br>=0.5)) / length(br)
+
+
+##############################
+## figure
+##############################
 
 jpeg('br-by-proj.jpg')
 hist(br,main="Build Rate by Proj",xlab="Build Rate",ylab="Porj Count")
@@ -67,7 +100,6 @@ dev.off()
 ## TODO add statistics
 gooddf <- df[which(br>0.8 & suc > 1000),]
 write.csv(gooddf, file="goodbench.csv")
-
 
 ## top build rate projects
 
@@ -131,3 +163,42 @@ legend("topleft",
        legend=c(expression(-log[10](italic(p))), "N genes"),
        lty=c(1,0), pch=c(NA, 16), col=c("red3", "black"))
 dev.off()
+
+
+
+##############################
+## all.csv
+## size,loc,proc,branch,loop
+##############################
+
+## these are some data that requires parsing a new csv file
+## avg AST,line,interprocedure,loops,branch
+
+
+csvfile <- "all.csv"
+df <- read.csv(csvfile)
+names(df) <- c("size", "loc", "proc", "branch", "loop")
+
+## avg AST size
+## sum(suc * size) / sum(suc)
+sum(df$size) / dim(df)[1]
+## avg loc
+sum(df$loc) / dim(df)[1]
+## avg interprocedure
+sum(df$proc) / dim(df)[1]
+## avg loops
+sum(df$loop) / dim(df)[1]
+## avg branch
+sum(df$branch) / dim(df)[1]
+
+
+## for loc larger than 100, how many, what's the build rate
+length(which(df$loc>25))
+pred <- which(df$loc>25)
+(df$suc)[pred] / (df$suc[pred] + df$fail[pred])
+
+loc25df <- df[df$loc>25,]
+## how many
+dim(loc25df)[1]
+## build rate
+## loc25df$suc / (loc25df$suc + loc25df$fail)

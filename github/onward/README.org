@@ -1,0 +1,9 @@
+#+TITLE: README
+log-remove2k.txt is the original log file.
+Here's the process
+
+log-remove2k.txt
+- process.sh -> perf.txt
+- a.py -> cache-time.csv
+- a.R -> fast-bench.txt
+- process.sh -> fast-bench-shell.txt

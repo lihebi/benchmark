@@ -3,8 +3,9 @@ struct A {
   int b;
 };
 
-int foo() {
-  int a,b,c,d,e;
+int foo(int a, int b) {
+  int c=8,d;
+  int e;
   A aa;
   while (a<c) {
     a=b;
@@ -15,5 +16,8 @@ int foo() {
       a=8;
     }
     a++;
+  }
+  for (int i=0;i<c;i++) {
+    a+=i;
   }
 }

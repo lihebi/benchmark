@@ -1,0 +1,51 @@
+# a.c
+
+## TODO this file into a unit test??
+## Test single statement
+# 12 7
+
+# 12 8
+
+# 14 8
+
+
+## Test if with both true and else
+# 12 8
+# 14 8
+
+
+## Test if header
+# 11 6
+
+## test while header
+# 9 5
+
+## test if and outside
+# 10 8
+# 12 8
+# 11 6
+
+## test skipping if
+# 10 8
+# 12 8
+
+## testing for loop
+## for loop select header
+# 19 4
+
+## for condition expr
+# 19 17
+
+## for loop with expression
+# 19 4
+# 19 17
+
+## for loop select body
+# 20 6
+
+## for loop select condition
+# 19 12
+
+## for loop select hybrid
+20 6
+19 12

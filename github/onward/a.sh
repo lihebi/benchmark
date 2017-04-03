@@ -21,7 +21,10 @@ fi
 
 
 if [ $1 == "helium-cache" ]; then
+    ct=0
     for name in $HOME/data/fast/*; do
+        ct=$((ct+1))
+        echo "NO. $ct: " $name
         helium --create-cache $name
     done
 fi

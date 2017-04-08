@@ -18,7 +18,7 @@ fi
 
 if [ $1 == "get-small" ]; then
     for name in arch-*.html.txt; do
-        awk '{if ($2<10000000) print $1}' $name > small.txt
+        awk '{if ($2<10000000) print $1}' $name > small-$name
     done
 fi
 

@@ -1,0 +1,25 @@
+#+TITLE: Packages for Linux Distribution
+
+
+For archlinux;
+
+US mirrors:
+- http://mirror.clarkson.edu/archlinux/
+- http://mirror.pointysoftware.net/archlinux/
+- http://mirror.ziemer.bz/archlinux
+
+Download Path:
+
+replace the middle with
+- core
+- extra
+- community
+- multilib
+
+http://mirror.clarkson.edu/archlinux/  + <MIDDLE> + /os/x86_64/
+
+
+http://mirror.clarkson.edu/archlinux/core/os/x86_64/
+http://mirror.clarkson.edu/archlinux/extra/os/x86_64/
+http://mirror.clarkson.edu/archlinux/community/os/x86_64/
+http://mirror.clarkson.edu/archlinux/multilib/os/x86_64/

@@ -37,7 +37,7 @@ function getsize() {
 function parse() {
     echo "["
     for name in $1/*; do
-        # echo $name 1>&2
+        echo $name 1>&2
         echo "{"
         # echo $name
         # package name

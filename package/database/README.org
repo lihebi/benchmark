@@ -1,0 +1,5 @@
+#+TITLE: Using database
+
+- http://mirrors.rit.edu/archlinux/$repo/os/$arch
+
+- http://mirrors.rit.edu/archlinux

@@ -9,3 +9,9 @@
 in core.json, remove
 - gcc
 - linux-xxx
+- remove usr/include/bits for glibc
+- disable usr/include/sys in headermanager
+- remove thread_db.so
+- remove mingw* in extra
+** Removing from json
+- mythtv:0.28.1

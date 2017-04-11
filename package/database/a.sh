@@ -35,47 +35,39 @@ function getsize() {
 #     }
 
 function parse() {
-    echo "["
     for name in $1/*; do
-        echo $name 1>&2
+        echo "$name" 1>&2
         echo "{"
         # echo $name
         # package name
         package=`echo ${name##*/} | sed -e 's/\(-[0-9\.]\{1,\}\)*//g'`
         echo "\"package\": \"$package\","
         # size
-        # getsize $name/desc
+        size=`getsize $name/desc`
+        echo "\"size\": \"$size\","
         # maybe analyze the size
 
         # include path
-        echo -n "\"headers\": ["
-        awk '
-match($0, /usr\/include\/(.*\.h)/, a) {print a[1]}
-' $name/files | awk '{print "\"" $0 "\","}' |\
-            tr '\n' ' ' |\
+        echo -n "\"includes\": ["
+        awk 'BEGIN {ORS=" "} /\.h$/ {print "\"/" $0 "\","} ' $name/files |\
             sed -e "s/, $//"
         echo "],"
 
         # flags
-        echo -n "\"flags\": ["
-        awk '
-match($0, /usr\/lib\/(.*\.so$)/, a) {print a[1]}
-            ' $name/files |\
-                sed -e "s/^lib/-l/" -e "s/\.so$//" |\
-                awk '{print "\"" $0 "\","}' |\
-                tr '\n' ' ' |\
-                sed -e "s/, $//"
+        echo -n "\"libs\": ["
+        awk 'BEGIN {ORS=" "} /\.so$/ {print "\"/" $0 "\","} ' $name/files |\
+            sed -e "s/, $//"
         echo "]"
 
         echo "},"
-        # break
     done
-    echo "]"
 }
 
 if [ $1 == "analyze" ]; then
     for repo in core extra community multilib; do
         echo "parsing $repo ..."
-        parse $repo.files > $repo.json
+        echo "[" > $repo.json 
+        parse $repo.files | sed -e '$ s/,$//' >> $repo.json
+        echo "]" >> $repo.json
     done
 fi

@@ -3,3 +3,9 @@
 - http://mirrors.rit.edu/archlinux/$repo/os/$arch
 
 - http://mirrors.rit.edu/archlinux
+
+
+* Post process
+in core.json, remove
+- gcc
+- linux-xxx

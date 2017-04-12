@@ -3,6 +3,9 @@
 from urllib import request
 import json
 
+token = '995b6274688ce47a82ce72cd09bb7866eca1e460'
+token = '9b47dfbca3a74d8ff098b7d966329843d69fbba4'
+url = 'https://api.github.com'
 
 def get_repo():
     url = 'https://api.github.com'
@@ -37,6 +40,45 @@ def get_repo():
             objs.append(obj)
     return objs
 
+# objs=get_repo()
+# json.dump(objs, open('repos.json', 'w'), indent=2)
+
+def get_language(obj):
+    api = '/repos/'
+    # j=json.load(open('all.json'))
+    ct=0
+    for item in obj:
+        # only if this item does not have
+        if 'languages' not in item:
+            print ('getting language for ', item['name'], ', star: ', item['stars'])
+            ct+=1
+            # this is for rate limit
+            if ct>2800: break
+            query = url + api + item['full_name'] + '/languages'
+            req = request.Request(query)
+            req.add_header("Authorization", "token " + token)
+            response = request.urlopen(req)
+            s = response.read().decode('utf8')
+            langj = json.loads(s);
+            item['languages'] = langj
+
+            
+# obj = json.load(open('all.json'))
+get_language(obj)
+    
+
+def get_rate_limit():
+    query = url + '/rate_limit'
+    req = request.Request(query)
+    req.add_header("Authorization", "token " + token)
+    response = request.urlopen(req)
+    s = response.read().decode('utf8')
+    print(s)
+
+get_rate_limit()
+    
+    
+
 def connect():
     repo=[]
     s=set()
@@ -51,9 +93,7 @@ def connect():
     json.dump(repo, open('all.json', 'w'), indent=2)
     return repo
 
-repo=connect()
-# objs=get_repo()
-# json.dump(objs, open('repos.json', 'w'), indent=2)
+# repo=connect()
 
 # if __name__ == '__main__':
 #     # TODO multi-thread

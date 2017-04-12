@@ -1,0 +1,62 @@
+#+TITLE: Query github for benchmarks
+
+- star number: 100-200
+  - too many stars: very large projects
+- no sub-modules
+- C file more than 70%
+- in source code, no un-captured headers
+
+
+
+
+#+BEGIN_EXAMPLE
+https://api.github.com/search/repositories?q=language:C
+&sort=stars
+&order=desc
+&stars:>10
+&per_page=100
+#+END_EXAMPLE
+
+
+/repos/:owner/:repo/languages
+
+https://api.github.com/
+
+google/brotli
+
+https://api.github.com/repos/google/brotli/languages
+
+to get rate limit: /rate_limit
+
+
+* New Task
+
+I want to build a database (json file) that contains
+
+#+BEGIN_SRC json
+  [
+      {
+          "name": "linux",
+          "full-name": "torvalds/linux",
+          "star": 3243,
+          "size": 1801624,
+          "language": "C",
+          "languages": {
+              "C": 578342739,
+              "C++": 13480028,
+              "Assembly": 10464187,
+              "Makefile": 1628137,
+              "Perl": 761089,
+              "Objective-C": 698021,
+              "Python": 244456,
+              "Shell": 195026,
+              "Yacc": 83189,
+              "Lex": 43193,
+              "Awk": 22861,
+              "GDB": 18113,
+              "UnrealScript": 16715,
+              "SourcePawn": 2711
+          }
+      }
+  ]
+#+END_SRC

@@ -28,6 +28,10 @@ https://api.github.com/repos/google/brotli/languages
 
 to get rate limit: /rate_limit
 
+* Specs about github json result
+- size: k
+- language LOC: LOC
+
 
 * New Task
 

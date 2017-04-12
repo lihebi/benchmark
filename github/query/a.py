@@ -64,7 +64,7 @@ def get_language(obj):
 
             
 # obj = json.load(open('all.json'))
-get_language(obj)
+# get_language(obj)
     
 
 def get_rate_limit():
@@ -75,7 +75,7 @@ def get_rate_limit():
     s = response.read().decode('utf8')
     print(s)
 
-get_rate_limit()
+# get_rate_limit()
     
     
 
@@ -99,3 +99,79 @@ def connect():
 #     # TODO multi-thread
 #     search("C", 1);
 
+
+all_with_lang = json.load(open('all_with_lang.json'))
+
+def lang_rate(item):
+    langs = item['languages']
+    sumloc = 0
+    cloc = item['languages']['C']
+    for lang in langs:
+        sumloc += langs[lang]
+    return cloc/sumloc
+        
+def filter_bench(repos):
+    """
+    compute the percentage of C in the language list
+    """
+    ret = []
+    for item in repos:
+        langs = item['languages']
+        if 'Objective-C' in langs:
+            continue
+        if 'C++' in langs:
+            continue
+        if 'Ruby' in langs:
+            continue
+        if 'Java' in langs:
+            continue
+        if 'JavaScript' in langs:
+            continue
+        if 'C' not in langs:
+            continue
+        if lang_rate(item) < 0.7: continue
+        # 100k LOC
+        if langs['C'] > 100000: continue
+        # 1M
+        if item['size'] > 1000: continue
+        # print(item['name'])
+        ret.append(item)
+    return ret
+
+if __name__ == '__hebi__':
+    print ('hello')
+    # obj=filter_bench(all_with_lang)
+    # json.dump(obj, open('use.json', 'w'), indent=2)
+    # print(len(obj))
+
+download_prefix = 'https://github.com/'
+download_suffix = '/archive/master.zip'
+def download(repos):
+    """
+    Download errors:
+    - zamaudio/intelmetool
+    - rentzsch/stressdrive
+    - mulle-nat/mulle-concurrent
+    - petermichaux/royal-scheme
+    - bradfa/flashbench
+    - dparrish/libcli
+    """
+    for repo in repos:
+        fullname = repo['full_name']
+        print('downloading ', fullname, '...')
+        filename = fullname.replace('/', '--')
+        url = download_prefix + fullname + download_suffix
+        filename = 'data/' + filename + '.zip'
+        if not os.path.isfile(filename):
+            try:
+                request.urlretrieve(url, filename)
+            except:
+                print ('error')
+        
+        
+if __name__ == '__hebi__':
+    # the one I'm going to use in experiment
+    used_repos = json.load(open('use.json'))
+    # download those files
+    download(used_repos)
+    # filter out those use more headers

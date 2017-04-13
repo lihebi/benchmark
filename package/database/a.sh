@@ -40,6 +40,16 @@ function parse() {
         echo "{"
         # echo $name
         # package name
+        # FIXME zlib:1.2.11
+        # FIXME ncurses+20170128
+        # FIXME openssl 1.0.2.k-1
+        # FIXME libedit_3.1
+        # FIXME sudop2
+        # FIXME wireless_toolspre9
+        # FIXME anjuta+1+g2bd433c
+        # FIXME atkmm+1+gf30b47f
+        # FIXME autoconf2.13
+        # FIXME bind-toolsP3
         package=`echo ${name##*/} | sed -e 's/\(-[0-9\.]\{1,\}\)*//g'`
         echo "\"package\": \"$package\","
         # size
@@ -63,6 +73,19 @@ function parse() {
     done
 }
 
+# function testname() {
+#     for name in $1/*; do
+#         echo ${name##*/} | sed -e 's/\([-:+][0-9\.]\{1,\}\)*//g'
+#         echo -e "\t" $name
+#     done
+# }
+
+# if [ $1 == "hebi" ]; then
+#     for repo in core extra community multilib; do
+#         testname $repo.files
+#     done
+# fi
+
 if [ $1 == "analyze" ]; then
     for repo in core extra community multilib; do
         echo "parsing $repo ..."
@@ -70,4 +93,18 @@ if [ $1 == "analyze" ]; then
         parse $repo.files | sed -e '$ s/,$//' >> $repo.json
         echo "]" >> $repo.json
     done
+fi
+
+
+if [ $1 == "index" ]; then
+    echo "======= core" > package-index.txt
+    cat core.txt >> package-index.txt
+    echo "======= extra" >> package-index.txt
+    cat extra.txt >> package-index.txt
+    echo "======= community" >> package-index.txt
+    cat community.txt >> package-index.txt
+    echo "======= multilib" >> package-index.txt
+    cat multilib.txt >> package-index.txt
+
+    sed -i -n -e '/\"package/p; /=====/p' package-index.txt
 fi

@@ -1,0 +1,54 @@
+#+TITLE: Data Process Design
+
+* Paper table
+
+General Information
+| # of benchmark | AVG benchmark size | Max benchmark size | Min benchmark size |
+|----------------+--------------------+--------------------+--------------------|
+|                |                    |                    |                    |
+
+Timing
+| # of sel | create cache | create sel | run helium |
+|----------+--------------+------------+------------|
+|        1 |              |            |            |
+|        2 |              |            |            |
+
+Build Rate:
+| # of tok | # of sel | # suc | # fail | # build rate |
+|----------+----------+-------+--------+--------------|
+|        1 | 100*200  |       |        |              |
+|        2 |          |       |        |              |
+|        5 |          |       |        |              |
+|       10 |          |       |        |              |
+|       20 |          |       |        |              |
+|       30 |          |       |        |              |
+
+Distribution:
+| # tok | # file | # proc | # if/switch | # of loop | Pat # file | Pat # proc | Pat # if/switch | Pat # loop |
+|-------+--------+--------+-------------+-----------+------------+------------+-----------------+------------|
+|       |        |        |             |           |            |            |                 |            |
+
+Output Metrics:
+| # of tok | Patch avg size | Snippet Used | Snippet All Dep | Program LOC |
+|----------+----------------+--------------+-----------------+-------------|
+|          |                |              |                 |             |
+
+Result analysis:
+- What's the reason of build rate?
+- What's the bad benchmarks?
+- Removing the bad benchmarks, what is the build rate?
+- Removing teh bad benchmarks, what is the reason?
+
+* CSV file
+
+For each tok log file:
+
+| bench | sel | suc/fail | file | proc | if | loop | Pif | Ploop | Psize | S | Sall | LOC |   |   |
+|-------+-----+----------+------+------+----+------+-----+-------+-------+---+------+-----+---+---|
+| aapa  |   8 |        1 |      |      |    |      |     |       |       |   |      |     |   |   |
+|       |     |        0 |      |      |    |      |     |       |       |   |      |     |   |   |
+|       |     |        1 |      |      |    |      |     |       |       |   |      |     |   |   |
+ 
+
+
+* Graphs

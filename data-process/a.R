@@ -2,7 +2,7 @@
 
 
 
-data = read.csv("log-0416/log-0416-exp-10.csv")
+## data = read.csv("log-0416/log-0416-exp-10.csv")
 
 
 adjustData <- function() {
@@ -32,47 +32,6 @@ combineData <- function() {
 
 ## combineData()
 
-## read the data
-data <- read.csv("all.csv")
-
-## distribution table
-dist <- data.frame()
-for (num in c(1,2,5,10,20,30,40)) {
-    ## tok <- c(tok, num)
-    sub <- data[data$fakesel==num,]
-    ## do with sub
-    ## compute build rate
-    getavg <- function (col) {
-        return (round(sum(col) / length(col), digits=2));
-    }
-    ## token
-    tmp <- c(num)
-    ## meta data
-    for (colname in c("file","proc","IF","loop","IfNode","LoopNode","pIfNode","pLoopNode","psize","s","sall")) {
-        ## print (getavg(data["file"][,]))
-        ## print (round(sum(data$file) / length(data$file), digits=2))
-        tmp <- c(tmp, getavg(sub[colname][,]))
-    }
-    ## build rate
-    suc <- length(sub$suc[sub$suc==1])
-    fail <- length(sub$suc[sub$suc==0])
-    total <- suc + fail
-    buildrate <- round(suc / total, digits=2)
-    tmp <- c(tmp, c(suc, fail, total, buildrate))
-    dist <- rbind(dist, tmp)
-    ## file <- c(file, getavg(data$file))
-    ## proc <- c(proc, getavg(data$proc))
-    ## IF <- c(IF, getavg(data$IF))
-}
-names(dist) <- c("tok", "file", "proc","IF","LOOP","If","Loop","pIf","pLoop",
-                 "psize", "s","sall", "suc", "fail", "total",
-                 "buildrate")
-print(dist)
-## remove IF and loop column and output
-brOutput <- dist[c("tok", "file", "proc", "pIf","pLoop", "psize", "s",
-                   "sall", "suc", "fail", "total", "buildrate")]
-write.csv(brOutput, "output-buildrate.csv", row.names=FALSE, quote=FALSE)
-
 
 
 ##############################
@@ -99,64 +58,150 @@ getBuildRate <- function(df) {
     total <- suc + fail
     buildrate <- round(suc / total, digits=2)
     ret <- c(ret, c(suc, fail, total, buildrate))
+    names(ret) <- c("file", "proc","IF","LOOP","If","Loop", "pIf",
+                    "pLoop", "psize", "s","sall", "suc", "fail",
+                    "total", "buildrate")
+    ## print(paste("1", length(names(ret))))
+    ## print(paste("2", length(ret)))
     return (ret)
 }
 
+## getBuildRateExcept <- function(df, except) {
+##     ## except should be a list of string factors
+##     setdiff(df$bench, except)
+##     sub <- df[!(df$bench %in% except)]
+##     getBuildRate(sub)
+## }
+## tokenBR <- getBuildRateByToken(df)
+
 getBuildRateByToken <- function(df) {
     ret <- c()
-    ret <- data.frame(stringsAsFactors=FALSE)
+    ret <- data.frame()
+    rownames <- c()
     for (num in c(1,2,5,10,20,30,40)) {
         ## tok <- c(tok, num)
         sub <- df[df$fakesel==num,]
         row <- getBuildRate(sub)
-        ret <- rbind(ret, row, stringsAsFactors=FALSE)
+        ## print(paste("3", length(row)))
+        rownames <- names(row)
+        row <- c(num, row)
+        ## print(paste("4", length(rownames)))
+        ret <- rbind(ret, row)
     }
-    names(ret) <- c("file", "proc","IF","LOOP","If","Loop","pIf","pLoop",
-                    "psize", "s","sall", "suc", "fail", "total",
-                    "buildrate")
+    names(ret) <- c("tok", rownames)
+    ## names(ret) <- c("tok", "file", "proc","IF","LOOP","If","Loop",
+    ##                 "pIf","pLoop", "psize", "s","sall", "suc", "fail",
+    ##                 "total", "buildrate")
     return (ret)
 }
 
 getBuildRateByBench <- function(df) {
+    benchCol <- c()
     ret <- data.frame()
     for (level in levels(df$bench)) {
         levelSub <- df[df$bench==level,]
         suc <- sum(levelSub$suc)
         total <- length(levelSub$suc)
         br <- round(suc / total, digits=2)
-        row <- c(level, suc, total, br)
-        ret <- rbind(ret, row, stringsAsFactors=FALSE)
+        benchCol <- c(benchCol, level)
+        row <- c(suc, total, br)
+        ret <- rbind(ret, row)
         ## print(level)
     }
+    ret <- cbind(benchCol, ret)
     names(ret) <- c("bench", "suc", "total", "br")
     return (ret)
 }
+
+getCutBuildRate <- function(df) {
+    breaks <- c(0, 0.3, 0.6, 0.9)
+    benchBR <- getBuildRateByBench(df)
+    ret <- data.frame()
+    rownames <- c()
+    for (b in breaks) {
+        ## print(paste("cut break:", b))
+        goodBenchNames <- benchBR$bench[benchBR$br>=b]
+        ## write the names into file
+        filename <- paste("goodbench-",b,".txt",sep="")
+        write.csv(goodBenchNames, filename, row.names=FALSE, quote=FALSE)
+        ## print(paste("goo bench:", length(goodBenchNames)))
+        sub <- df[df$bench %in% goodBenchNames,]
+        row <- getBuildRate(sub)
+        rownames <- names(row)
+        row <- c(b, row)
+        ret <- rbind(ret, row)
+    }
+    names(ret) <- c("break", rownames)
+    return (ret)
+}
+
+
+## read the data
+df <- read.csv("all.csv")
+
+tokenBR <- getBuildRateByToken(df)
+
+benchBR <- getBuildRateByBench(df)
+
+allBR <- getBuildRate(df)
+
+cutBR <- getCutBuildRate(df)
+
+
+tokenBROutput <- tokenBR[c("tok", "file", "proc", "pIf","pLoop",
+                         "psize", "s", "sall", "suc", "fail", "total",
+                         "buildrate")]
+write.csv(tokenBROutput, "output-token-buildrate.csv", row.names=FALSE, quote=FALSE)
+cutBROutput <- cutBR[c("break", "file", "proc", "suc", "fail", "total", "buildrate")]
+write.csv(cutBROutput, "output-cut-buildrate.csv", row.names=FALSE, quote=FALSE)
+
+
+
+##############################
+## Graph
+##############################
+
+
+## build rate graph
+br <- benchBR$br
+pdf("build-rate-graph.pdf")
+dev.control(displaylist = "enable")
+par(mfrow=c(2,2))
+## plot(sort(benchBR$br))
+## barplot(sort(benchBR$br))
+## boxplot(br, xlab="br")
+hist(br,main="")
+pietable <- table(cut(br, breaks=c(-1,0.3,0.6,0.9,0.99,1)))
+pie(pietable, col=gray(seq(0.4, 1.0, length = 6)),
+    labels=paste(names(pietable), pietable)
+    )
+## Setting br!=1
+hist(br[br!=1],main="")
+## outlierThred <- boxplot.stats(benchBR$br)$stats[1]
+boxstats <- boxplot(br[br!=1], xlab="br!=1")
+## goodbr <- br[br>boxstats$stats[2]]
+## badbr <- br[br<boxstats$stats[2]]
+dev.off()
+
+
+## reason graph
+## first, lets prepare the reason data
+## write the good benchmark name into file
+## use analyze script to extract the first error
+## sort
 
 ##############################
 ## Bad Benchmarks
 ##############################
 
-badBench <- data.frame()
-## badBench <- rbind(c("hello", 99, 100, 0.99))
-for (num in c(1,2,5,10,20,30,40)) {
-    ## tok <- c(tok, num)
-    sub <- data[data$fakesel==num,]
-    for (level in levels(sub$bench)) {
-        levelSub <- sub[sub$bench==level,]
-        suc <- sum(levelSub$suc)
-        total <- length(levelSub$suc)
-        br <- round(suc / total, digits=2)
-        tmp <- c(level, suc, total, br)
-        badBench <- rbind(badBench, tmp, stringsAsFactors=FALSE)
-        ## print(level)
-    }
-    break
-}
-names(badBench) <- c("bench", "suc", "total", "br")
-print (badBench)
-## print badBench
+## now get the build rate
+benchBR$bench[benchBR$br>0.6]
 
+
+
+##############################
 ## Benchmark information
+##############################
 
 benchdata <- read.csv("bench-info.csv")
 benchNum <- dim(benchdata)[1]
@@ -165,3 +210,17 @@ benchDF <- data.frame()
 benchDF <- rbind(benchDF, c(benchNum, benchAvg, max(benchdata$size), min(benchdata$size)))
 names(benchDF) <- c("Bench Num", "Avg Size", "Max Size", "Min Size")
 write.csv(benchDF, "output-bench-info.csv", row.names=FALSE, quote=FALSE)
+
+
+
+
+##############################
+## Testing
+##############################
+
+
+testDF <- data.frame()
+for (num in c(1:10)) {
+    testDF <- rbind(testDF, c(num, num+1))
+}
+print(testDF)

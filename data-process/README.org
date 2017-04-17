@@ -33,11 +33,19 @@ Output Metrics:
 |----------+----------------+--------------+-----------------+-------------|
 |          |                |              |                 |             |
 
-Result analysis:
+*** DONE Cut BR
+    CLOSED: [2017-04-17 Mon 15:26]
+| portion | # of proj | br |
+|---------+-----------+----|
+| br>0.9  |           |    |
+| br>0.6  |           |    |
+| br>0.3  |           |    |
+| br>=0   |           |    |
+
+*** TODO Reason
 - What's the reason of build rate?
-- What's the bad benchmarks?
-- Removing the bad benchmarks, what is the build rate?
 - Removing teh bad benchmarks, what is the reason?
+
 
 * CSV file
 

@@ -47,3 +47,40 @@ if [ $1 == "process-log" ]; then
         awk -f process-log.awk $name > ${name%%.txt}.csv
     done
 fi
+
+if [ $1 == "analyze-error" ]; then
+    # $2 should be the log file
+    awk '
+/NO\./ {print}
+/HEBI: RUNNING/ {print}
+/[[:digit:]]: error:/ {if (err) {print; err=0;}}
+/Success/ {err=1}
+/Failure/ {err=1}
+' $2
+fi
+
+if [ $1 == "sort-error" ]; then
+    cat $2 | grep 'error:' | sed -e "s#'.*##" | sed -e "s/^.*error//" | sort | uniq -c | sort -n
+fi
+
+if [ $1 == "analyze-combine-error" ]; then
+    rm -r error.txt
+    for name in log-0416/*.txt; do
+        echo $name
+        ./a.sh analyze-error $name >> error.txt
+    done
+fi
+
+if [ $1 == "reason-error" ]; then
+    # $2 should be the error file
+    # $3 should be the good benchmark file
+    ./a.py error.txt goodbench-0.txt > error-0.txt
+    ./a.py error.txt goodbench-0.3.txt > error-0.3.txt
+    ./a.py error.txt goodbench-0.6.txt > error-0.6.txt
+    ./a.py error.txt goodbench-0.9.txt > error-0.9.txt
+
+    ./a.sh sort-error error-0.txt > reason-0.txt
+    ./a.sh sort-error error-0.3.txt > reason-0.3.txt
+    ./a.sh sort-error error-0.6.txt > reason-0.6.txt
+    ./a.sh sort-error error-0.9.txt > reason-0.9.txt
+fi

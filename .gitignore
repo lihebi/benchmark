@@ -1,2 +1,4 @@
 helium-output
 gmon.out
+*.txt
+*.tar.gz

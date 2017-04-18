@@ -128,13 +128,31 @@ getCutBuildRate <- function(df) {
         sub <- df[df$bench %in% goodBenchNames,]
         row <- getBuildRate(sub)
         rownames <- names(row)
-        row <- c(b, row)
+        row <- c(b, length(goodBenchNames), row)
         ret <- rbind(ret, row)
     }
-    names(ret) <- c("break", rownames)
+    names(ret) <- c("break", "ProjNum", rownames)
     return (ret)
 }
 
+## reason graph
+## evalute it will not change cutBR
+getReason <- function(cutBRLocal) {
+    reasonDF1 <- read.csv("reason-0.csv")
+    reasonDF2 <- read.csv("reason-0.3.csv")
+    reasonDF3 <- read.csv("reason-0.6.csv")
+    reasonDF4 <- read.csv("reason-0.9.csv")
+
+    
+    reasonCT <- c(dim(reasonDF1)[1],
+                  dim(reasonDF2)[1],
+                  dim(reasonDF3)[1],
+                  dim(reasonDF4)[1])
+    ## I'm using cutBR
+    ## cutBR[c("break")]
+    cutBRLocal <- cbind(cutBRLocal, reasonCT)
+    return (cutBRLocal)
+}
 
 ## read the data
 df <- read.csv("all.csv")
@@ -146,14 +164,18 @@ benchBR <- getBuildRateByBench(df)
 allBR <- getBuildRate(df)
 
 cutBR <- getCutBuildRate(df)
+cutBR <- getReason(cutBR)
 
 
 tokenBROutput <- tokenBR[c("tok", "file", "proc", "pIf","pLoop",
-                         "psize", "s", "sall", "suc", "fail", "total",
-                         "buildrate")]
+                           "psize", "s", "sall", "suc", "fail",
+                           "total", "buildrate")]
 write.csv(tokenBROutput, "output-token-buildrate.csv", row.names=FALSE, quote=FALSE)
-cutBROutput <- cutBR[c("break", "file", "proc", "suc", "fail", "total", "buildrate")]
+cutBROutput <- cutBR[c("break", "suc", "fail",
+                       "total", "buildrate", "reasonCT")]
 write.csv(cutBROutput, "output-cut-buildrate.csv", row.names=FALSE, quote=FALSE)
+
+
 
 
 
@@ -166,7 +188,7 @@ write.csv(cutBROutput, "output-cut-buildrate.csv", row.names=FALSE, quote=FALSE)
 br <- benchBR$br
 pdf("build-rate-graph.pdf")
 dev.control(displaylist = "enable")
-par(mfrow=c(2,2))
+par(mfrow=c(2,2),oma=c(5,4,3,3),mar=c(4,3,1,1))
 ## plot(sort(benchBR$br))
 ## barplot(sort(benchBR$br))
 ## boxplot(br, xlab="br")
@@ -184,19 +206,107 @@ boxstats <- boxplot(br[br!=1], xlab="br!=1")
 dev.off()
 
 
-## reason graph
-## first, lets prepare the reason data
-## write the good benchmark name into file
-## use analyze script to extract the first error
-## sort
+
+
+
+## construct the graph??
+reasonDF1 <- read.csv("reason-0.csv")
+reasonDF2 <- read.csv("reason-0.3.csv")
+reasonDF3 <- read.csv("reason-0.6.csv")
+reasonDF4 <- read.csv("reason-0.9.csv")
+
+drawPie <- function(df, top=-1, title="") {
+    if (top==-1) {
+        pie(df$Num, labels=df$ID)
+    } else {
+        select <- c((dim(df)[1]-top+1):dim(df)[1])
+        othersum <- sum(df$Num[-select])
+        real <- df[select,]
+        colors <- rep(rainbow(5),8)
+        ## colors <- rep(gray(seq(0.4,1.0,length=8)), 8)
+        # TODO color according to ID
+        pie(c(real$Num, othersum), labels=c(real$ID, "other"),
+            col=c(colors[real$ID], gray(0.5)),
+            main=title)
+    }
+}
+
+pdf("reason-graph.pdf")
+dev.control(displaylist = "enable")
+par(mfrow=c(2,2),oma=c(0,0,0,0),mar=c(0,0,1,1))
+## mtext("Main title", line=2, font=2, cex=1.2)
+drawPie(reasonDF1, 5, "br>=0")
+drawPie(reasonDF2, 5, "br>=0.3")
+## drawPie(reasonDF3, 4, "br>=0.6")
+drawPie(reasonDF4, 4, "br>=0.9")
+## legend(10,10, "hello legend")
+## legend.pie(10, 10, leg.txt, pch = "sSvV", col = c(1, 3), cex = 0.8)
+plot.new()
+legend("center", c("1:   use of undeclared identifier",
+                   "2:   linker command failed",
+                   "3:   unknown type name",
+                   "4:   no member named",
+                   "5:   expected ;",
+                   "6:   expected identifier",
+                   "7:   field has incomplete type",
+                   "8:   redefinition of",
+                   "9:   conflicting types for",
+                   "10: type name requires a specifier or qualifier",
+                   "11: variable has incomplete type",
+                   "12: typedef redefinition with different types",
+                   "13: duplicate member",
+                   "14: expected identifier or",
+                   "15: incomplete definition of type",
+                   "16: expected expression",
+                   "17: array has incomplete element type",
+                   "18: expression is not assignable",
+                   "19: too few arguments to function call, expected 3, have 2",
+                   "20: returning type does not match"
+                   ), cex=0.8)
+dev.off()
+
+pie(reasonDF2$Num, labels=reasonDF2$ID)
+
+
+pdf("tmp.pdf")
+dev.control(displaylist = "enable")
+## Run the example in '?matplot' or the following:
+## leg.txt <- c("Setosa     Petals", "Setosa     Sepals",
+##              "Versicolor Petals", "Versicolor Sepals")
+## y.leg <- c(4.5, 3, 2.1, 1.4, .7)
+## cexv  <- c(1.2, 1, 4/5, 2/3, 1/2)
+## matplot(c(1, 8), c(0, 4.5), type = "n", xlab = "Length", ylab = "Width",
+##         main = "Petal and Sepal Dimensions in Iris Blossoms")
+## for (i in seq(cexv)) {
+##     text  (1, y.leg[i] - 0.1, paste("cex=", formatC(cexv[i])), cex = 0.8, adj = 0)
+##     legend(3, y.leg[i], leg.txt, pch = "sSvV", col = c(1, 3), cex = cexv[i])
+## }
+## text  (1, 3, paste("cex=8"), cex = 0.8, adj = 0)
+## legend(3, 3, leg.txt, pch = "sSvV", col = c(1, 3), cex = 0.8)
+op <- par(
+  oma=c(0,0,3,0),# Room for the title and legend
+  mfrow=c(2,2)
+)
+for(i in 1:4) {
+  plot( cumsum(rnorm(100)), type="l", lwd=3,
+  col=c("navy","orange")[ 1+i%%2 ], 
+  las=1, ylab="Value",
+  main=paste("Random data", i) )
+}
+par(op) # Leave the last plot
+mtext("Main title", line=2, font=2, cex=1.2)
+op <- par(usr=c(0,1,0,1), # Reset the coordinates
+          xpd=NA)         # Allow plotting outside the plot region
+legend(-.1,1.15, # Find suitable coordinates by trial and error
+  c("one", "two"), lty=1, lwd=3, col=c("navy", "orange"), box.col=NA)
+dev.off()
+
+
+
 
 ##############################
 ## Bad Benchmarks
 ##############################
-
-## now get the build rate
-benchBR$bench[benchBR$br>0.6]
-
 
 
 ##############################

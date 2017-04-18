@@ -35,16 +35,81 @@ Output Metrics:
 
 *** DONE Cut BR
     CLOSED: [2017-04-17 Mon 15:26]
-| portion | # of proj | br |
-|---------+-----------+----|
-| br>0.9  |           |    |
-| br>0.6  |           |    |
-| br>0.3  |           |    |
-| br>=0   |           |    |
+| portion | # of proj | suc | fail | br | # err type |
+|---------+-----------+-----+------+----+------------|
+| br>0.9  |           |     |      |    |            |
+| br>0.6  |           |     |      |    |            |
+| br>0.3  |           |     |      |    |            |
+| br>=0   |           |     |      |    |            |
 
 *** TODO Reason
-- What's the reason of build rate?
-- Removing teh bad benchmarks, what is the reason?
+# - What's the reason of build rate?
+# - Removing teh bad benchmarks, what is the reason?
+
+- Reason for cut BR
+
+Automate this:
+1. sort all reasons
+2. assign ID for each,
+  - output a txt file for the mapping
+  - Produce a mapping graph.
+3. for each file, get a CSV:
+| ID | Number |
+|  1 |    345 |
+|  3 |    322 |
+4. In R, parse this CSV, produce a pie graph
+
+**** 0 (40)
+#+BEGIN_EXAMPLE
+37 : too few arguments to function call
+65 : expected expression
+81 : array has incomplete element type 
+82 : expression is not assignable
+90 : variable has incomplete type 
+100 : duplicate member
+100 : expected identifier
+100 : expected identifier or 
+100 : field has incomplete type 
+100 : typedef redefinition with different types
+100 : type name requires a specifier or qualifier
+101 : redefinition of 
+105 : conflicting types for 
+113 : incomplete definition of type 
+226 : no member named 
+236 : expected 
+427 : unknown type name 
+466 : linker command failed
+1264 : use of undeclared identifier 
+#+END_EXAMPLE
+**** 0.3 (27)
+#+BEGIN_EXAMPLE
+21 : incomplete definition of type 
+61 : expected 
+81 : array has incomplete element type 
+123 : linker command failed
+191 : no member named 
+612 : use of undeclared identifier 
+#+END_EXAMPLE
+**** 0.6 (22)
+#+BEGIN_EXAMPLE
+21 : incomplete definition of type 
+42 : expected 
+57 : linker command failed with exit code 1 (use -v to see invocation)
+128 : no member named 
+277 : use of undeclared identifier 
+#+END_EXAMPLE
+**** 0.9 (14)
+#+BEGIN_EXAMPLE
+3 : cannot create log file %s\n",
+3 : loops below bounds\n");
+3 : path longer than FILENAME_MAX\n");
+3 s[ret]);
+7 : no member named 
+40 : use of undeclared identifier 
+#+END_EXAMPLE
+
+
+
 
 
 * CSV file
@@ -60,3 +125,6 @@ For each tok log file:
 
 
 * Graphs
+
+
+

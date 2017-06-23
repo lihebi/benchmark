@@ -1,8 +1,10 @@
+struct A2;
 struct A1 {
 };
 struct A2 {
-  struct A1;
+  struct A1 a;
 };
+
 
 typedef struct A2 A2;
 typedef struct A3 {

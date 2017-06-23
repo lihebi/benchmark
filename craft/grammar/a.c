@@ -1,7 +1,7 @@
-struct A {
-  int a;
-  int b;
-};
+/* struct A { */
+/*   int a; */
+/*   int b; */
+/* }; */
 
 int foo(int a, int b) {
   int c=8,d;

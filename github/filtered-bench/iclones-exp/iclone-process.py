@@ -93,7 +93,7 @@ def get_pairs():
 
 
 def gen_result_json():
-    result_file = 'iclones-exp/ioidpath.txt'
+    result_file = 'ioidpath.txt'
     ret = {}
     with open(result_file) as f:
         for line in f:
@@ -145,8 +145,9 @@ def compare():
                 pairObj['ID2'] = objs[j]['ID']
                 # compare i and j
                 print ("comparing " + objs[i]['ID'] + ' and ' + objs[j]['ID'] + ' ...')
-                clone=compare_file(objs[i]['path'], objs[j]['path'])
+                [clone,iodata]=compare_file(objs[i]['path'], objs[j]['path'])
                 pairObj['clone'] = clone
+                pairObj['iodata'] = iodata
                 pairsObj.append(pairObj)
                 # if (clone):
                 #     print ("is clone")
@@ -180,29 +181,85 @@ def compare_file(file1, file2):
         # get output from f2
         for line in f1:
             t=line.split()[1] # type
+            k=line.split()[2].split('=')[0] # key
             v=line.split('=')[1] # value
             if line.startswith('input'):
-                f1_inputs.append({'type': t, 'value': v})
+                f1_inputs.append({'type': t, 'key': k, 'value': v})
             if line.startswith('output'):
-                f1_outputs.append({'type': t, 'value': v})
+                f1_outputs.append({'type': t, 'key': k, 'value': v})
         for line in f2:
             t=line.split()[1] # type
+            k=line.split()[2].split('=')[0] # key
             v=line.split('=')[1] # value
             if line.startswith('input'):
-                f2_inputs.append({'type': t, 'value': v})
+                f2_inputs.append({'type': t, 'key': k, 'value': v})
             if line.startswith('output'):
-                f2_outputs.append({'type': t, 'value': v})
+                f2_outputs.append({'type': t, 'key': k, 'value': v})
         # comparing f1 and f2
         # now only compare in alphabetical order
         # i'll do a arbitrary combination later
-        if not len(f1_inputs) == len(f2_inputs): return False
-        if not len(f1_outputs) == len(f2_outputs): return False
-        for i in range(len(f1_inputs)):
-            if not f1_inputs[i]['value'] == f2_inputs[i]['value']: return False
-        for i in range(len(f1_outputs)):
-            if not f1_outputs[i]['value'] == f2_outputs[i]['value']: return False
-        return True
+        if not len(f1_inputs) == len(f2_inputs): return [False, 'length']
+        if not len(f1_outputs) == len(f2_outputs): return [False, 'length']
 
+        f1i = [f1_inputs[i]['value'] for i in range(len(f1_inputs))]
+        f2i = [f2_inputs[i]['value'] for i in range(len(f2_inputs))]
+        f1o = [f1_outputs[i]['value'] for i in range(len(f1_outputs))]
+        f2o = [f2_outputs[i]['value'] for i in range(len(f2_outputs))]
+
+        if not sorted(f1i) == sorted(f2i):
+            # return [False, [f1i, f2i, f1o, f2o]]
+            return [False, [f1_inputs, f2_inputs]]
+        if not sorted(f1o) == sorted(f2o):
+            return [False, [f1_outputs, f2_outputs]]
+        
+        # for i in range(len(f1_inputs)):
+        #     if not f1_inputs[i]['value'] == f2_inputs[i]['value']: return False
+        # for i in range(len(f1_outputs)):
+        #     if not f1_outputs[i]['value'] == f2_outputs[i]['value']: return False
+        return [True, '']
+
+def gen_table():
+    """
+    generate table for clone compare results
+    """
+    res = json.load(open('clone_compare_result.json'))
+    ret=''
+    line = ['classID', 'type', 'ID1', 'ID2', 'clone']
+    ret += ','.join(line) + '\n'
+    for classObj in res:
+        for pair in classObj['pairs']:
+            line=[]
+            line.append(classObj['classID'])
+            line.append(classObj['type'])
+            line.append(pair['ID1'])
+            line.append(pair['ID2'])
+            line.append(pair['clone'])
+            ret += ','.join([str(i) for i in line]) + "\n"
+    # write line to table
+    with open('compare_result.csv', 'w') as f:
+        f.write(ret)
+
+
+def extract_segment():
+    """
+    extract segment for each ID, from wholesel.json
+    """
+    wholejson = json.load(open('wholesel.json'))
+    for segment in wholejson:
+        filename=segment['file']
+        firstline=segment['sel'][0]['line']
+        lastline=segment['sel'][-1]['line']
+        ID=segment['ID']
+        linum=0
+        output=''
+        with open(filename) as f:
+            for line in f:
+                if linum>=firstline and linum <= lastline:
+                    output+=line
+                linum+=1
+        with open('output/'+str(ID)+'.txt', 'w') as f:
+            f.write(output)
+    
 def analyze_whole():
     j=json.load(open("wholesel.json"))
     len(j)
@@ -212,4 +269,6 @@ if __name__ == '__hebi__':
     get_pairs()
     gen_result_json()
     compare_res = compare()
+    extract_segment()
+    gen_table()
     pass

@@ -18,6 +18,10 @@ fi
 
 
 if [ $1 == "create-sel" ]; then
+    if [ $# != 2 ]; then
+        echo "should have two arguments: 1) folder and 2) number of selected token"
+        exit 1
+    fi
     ct=0
     for name in $BENCH/*; do
         ct=$((ct+1))
@@ -28,6 +32,63 @@ if [ $1 == "create-sel" ]; then
         helium --create-sel --sel-num 100 --sel-tok $2 $name
     done
 fi
+
+
+
+# some notes for the clone experiment
+# steps
+# 1. DONE run this create-iclones to put everything under a folder .helium.d/iclones
+# 2. DONE run iclones with .iclones.config path set to the folder, and output iclones-result.rcf
+# 3. DONE run java app to turn .rcf to .txt(iclones-result-javaout.txt)
+# 4. DONE run python script to turn it into selection file (with unique ID assigned to each selection)
+# 5. run helium to obtain IO pairs for each selection
+# 6. compare the IO data for the clone pairs
+
+# create clone for the "cpp" folder
+if [ $1 == "create-iclones" ]; then
+    ct=0
+    # put all the cpp folder in a centralized storage
+    # then run iclones
+    rm -r $HOME/.helium.d/iclones
+    mkdir $HOME/.helium.d/iclones
+    for name in $BENCH/*; do
+        # cppfolder = get the cache "cpp" folder
+        # simplename = get simple name
+        # copy cppfolder into $HOME/.helium.d/iclones/simplename
+        simplename=${name//\//_}
+        cppfolder=$HOME/.helium.d/cache/$simplename/cpp
+        mkdir $HOME/.helium.d/iclones/$simplename/
+        cp -r $cppfolder $HOME/.helium.d/iclones/$simplename/cpp
+    done
+fi
+
+
+# run with
+# ./a.sh run-iclones-exp 2>&1 |tee -a log-console.txt
+# this will got two files
+# log-console.txt
+# log-iclones-exp.txt
+# do not forget to remove these two files when running new instance
+if [ $1 == "run-iclones-exp" ]; then
+    # remove old log file
+    # rm -f iclones-exp-log.txt
+    # rm -f log-console.txt
+    ct=0
+    total=7655
+    # reset the sel counter
+    rm ~/.helium.d/helium_var.txt
+    # look for [PROCESS] Global Sel Count
+    for name in $BENCH/*; do
+        ct=$((ct+1))
+        if (( $ct < 49 )); then
+            continue
+        fi
+        # the number is needed to process
+        echo "NO. $ct: " $name | tee -a iclones-exp-log.txt
+        helium $name 1>> log-iclones-exp.txt
+    done
+fi
+
 
 
 if [ $1 == "backup-sel" ]; then

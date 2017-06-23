@@ -1,0 +1,80 @@
+#+BEGIN_SRC srcml :results html
+void switch_test() {
+  switch(a) {
+  case 3: a=b;b=c;
+  case 4: d=e;break;
+  case 8: d=e;b=c;
+  default: a=b;
+  }
+}
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_EXPORT html
+<unit revision="0.9.5" language="C" filename="empty">
+  <function>
+    <type>
+      <name>void</name>
+    </type>
+    <name>switch_test</name>
+    <parameter_list>()</parameter_list>
+    <block>{ 
+    <switch>switch
+    <condition>(
+    <expr>
+      <name>a</name>
+    </expr>)</condition>
+    <block>{ 
+    <case>case 
+    <expr>
+      <literal type="number">3</literal>
+    </expr>:</case>
+    <expr_stmt>
+    <expr>
+      <name>a</name>
+      <operator>=</operator>
+      <name>b</name>
+    </expr>;</expr_stmt>
+    <expr_stmt>
+    <expr>
+      <name>b</name>
+      <operator>=</operator>
+      <name>c</name>
+    </expr>;</expr_stmt>
+    <case>case 
+    <expr>
+      <literal type="number">4</literal>
+    </expr>:</case>
+    <expr_stmt>
+    <expr>
+      <name>d</name>
+      <operator>=</operator>
+      <name>e</name>
+    </expr>;</expr_stmt>
+    <break>break;</break>
+    <case>case 
+    <expr>
+      <literal type="number">8</literal>
+    </expr>:</case>
+    <expr_stmt>
+    <expr>
+      <name>d</name>
+      <operator>=</operator>
+      <name>e</name>
+    </expr>;</expr_stmt>
+    <expr_stmt>
+    <expr>
+      <name>b</name>
+      <operator>=</operator>
+      <name>c</name>
+    </expr>;</expr_stmt>
+    <default>default:</default>
+    <expr_stmt>
+    <expr>
+      <name>a</name>
+      <operator>=</operator>
+      <name>b</name>
+    </expr>;</expr_stmt>}</block></switch>}</block>
+  </function>
+</unit>
+#+END_EXPORT

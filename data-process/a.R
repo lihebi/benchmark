@@ -171,7 +171,7 @@ tokenBROutput <- tokenBR[c("tok", "file", "proc", "pIf","pLoop",
                            "psize", "s", "sall", "suc", "fail",
                            "total", "buildrate")]
 write.csv(tokenBROutput, "output-token-buildrate.csv", row.names=FALSE, quote=FALSE)
-cutBROutput <- cutBR[c("break", "suc", "fail",
+cutBROutput <- cutBR[c("break", "ProjNum", "suc", "fail",
                        "total", "buildrate", "reasonCT")]
 write.csv(cutBROutput, "output-cut-buildrate.csv", row.names=FALSE, quote=FALSE)
 
@@ -182,6 +182,9 @@ write.csv(cutBROutput, "output-cut-buildrate.csv", row.names=FALSE, quote=FALSE)
 ##############################
 ## Graph
 ##############################
+
+
+## final used graph
 
 
 ## build rate graph
@@ -230,6 +233,37 @@ drawPie <- function(df, top=-1, title="") {
             main=title)
     }
 }
+
+## reason table
+## reasonTable <- c()
+reasonTable <- cbind(c("use of undeclared identifier",
+                       "linker command failed", "unknown type name",
+                       "no member named", "expected ;",
+                       "expected identifier",
+                       "field has incomplete type", "redefinition of",
+                       "conflicting types for"))
+col=c()
+for (id in c(1:9)) {
+    col <- c(col, round(reasonDF1[reasonDF1$ID==id,]$Num[1] / sum(reasonDF1$Num), digits=2))
+}
+reasonTable <- cbind(reasonTable, col)
+col=c()
+for (id in c(1:9)) {
+    col <- c(col, round(reasonDF2[reasonDF2$ID==id,]$Num[1] / sum(reasonDF2$Num), digits=2))
+}
+reasonTable <- cbind(reasonTable, col)
+col=c()
+for (id in c(1:9)) {
+    col <- c(col, round(reasonDF3[reasonDF3$ID==id,]$Num[1] / sum(reasonDF3$Num), digits=2))
+}
+reasonTable <- cbind(reasonTable, col)
+col=c()
+for (id in c(1:9)) {
+    col <- c(col, round(reasonDF4[reasonDF4$ID==id,]$Num[1] / sum(reasonDF4$Num), digits=2))
+}
+reasonTable <- cbind(reasonTable, col)
+colnames(reasonTable) <- c("reason", "br>=0","br>=0.3","br>=0.6","br>=0.9")
+write.csv(reasonTable, "reason-table.csv", row.names=FALSE, quote=FALSE)
 
 pdf("reason-graph.pdf")
 dev.control(displaylist = "enable")
@@ -314,15 +348,21 @@ dev.off()
 ##############################
 
 benchdata <- read.csv("bench-info.csv")
+## benchdata <- benchdata[$size!=0]
 benchNum <- dim(benchdata)[1]
 benchAvg <- round(sum(benchdata$size) / benchNum, digits=2)
 benchDF <- data.frame()
-benchDF <- rbind(benchDF, c(benchNum, benchAvg, max(benchdata$size), min(benchdata$size)))
-names(benchDF) <- c("Bench Num", "Avg Size", "Max Size", "Min Size")
+benchDF <- rbind(benchDF, c(benchNum, benchAvg, max(benchdata$size), median(benchdata$size)))
+names(benchDF) <- c("Bench Num", "Avg Size", "Max Size", "Median Size")
 write.csv(benchDF, "output-bench-info.csv", row.names=FALSE, quote=FALSE)
 
 
-
+## sloc
+slocdata <- read.csv("sloc.csv", header=TRUE)
+# 20200 files / gens
+round((slocdata$src + slocdata$header) / 20200, digits=2)
+round(slocdata$src / 20200, digits=2)
+round(slocdata$header / 20200, digits=2)
 
 ##############################
 ## Testing
